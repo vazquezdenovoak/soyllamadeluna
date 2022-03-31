@@ -488,7 +488,14 @@ padding: 5px;
   .chocolate1 { grid-area: chocolate1; }
   
   
-
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
 
 
 

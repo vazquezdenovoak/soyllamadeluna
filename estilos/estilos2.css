@@ -13,7 +13,6 @@ body{
 header nav {
     height: 50px;
     display: flex;
-
     align-items: center;
     justify-content: center;
     column-gap: 20px;  
@@ -274,14 +273,14 @@ form label {
 
 }
 input {
-    width: 70%;
+    width: 40%;
 }
 form fieldset {
     padding: 20px;
     margin-bottom: 30px;
     border:none;
     border-radius: 10px;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -300,12 +299,15 @@ form fieldset span{
 }
 
 form textarea{
-    width: 70%;
+    width:auto;
     margin-bottom: 20px;
+    align-content: 
 }
 
 form fieldset input[type=submit]{
     width: auto;
+    align-content: ;
+    column-gap: normal;
 }
 
 form fieldset input[type=button]{
@@ -348,9 +350,44 @@ section iframe{
     height: 50vh;
 }
  video{
-    width: 200fr;
-     height: 300fr;
+    width: 200vw;
+     height: 200vw;    
+     padding: 10%;
 }
+.container {  
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1fr;
+    grid-template-rows: 0.8fr 0.9fr 1.3fr;
+    grid-auto-columns: 3fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-content: space-evenly;
+    grid-template-areas:
+      "chocolate pochoclos cafe "
+      "cookies sandiaymelon milflores"
+      "milflores chocolate cookies";
+    width: 73%;
+    height: 73%;
+  }
+  
+  .pochoclos { grid-area: pochoclos; }
+  
+  .sandiaymelon { grid-area: sandiaymelon; }
+  
+  .cookies { grid-area: cookies; }
+  
+  .chocolate { grid-area: chocolate; }
+  
+  .cookies1 { grid-area: cookies1; }
+  
+  .cafe { grid-area: cafe; }
+  
+  .milflores1 { grid-area: milflores1; }
+  
+  .milflores { grid-area: milflores; }
+  
+  .chocolate1 { grid-area: chocolate1; }
+  
 section h3 {
     padding-top: 50px;
     text-align: center;
@@ -418,6 +455,64 @@ footer ul li img {
     column-gap: 10px;   
 }
 
+.made_by{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+   
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
 
 
 @media screen and (max-width: 360px){
@@ -508,3 +603,11 @@ footer ul li img {
     transition: all 2s; 
     }
 }
+@media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
