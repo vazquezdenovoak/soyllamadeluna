@@ -19,7 +19,8 @@ header nav {
     background-color: rgb(193, 197, 199);
     color: rgba(3, 0, 8, 0.63); 
     position: sticky;
-    top:0;    
+    top:0; 
+    z-index: 100;   
 }
 header nav ul li:hover{
     background-color: #2b649659; 
@@ -90,42 +91,12 @@ a:-webkit-any-link {
     
 }
 
-@keyframes slidein{
-    from {
-      margin-left: 100%;
-      width: 200%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-    75% {
-        font-size: 200%;
-        margin-left: 25%;
-        width: 150%;
-      }
-}
+
 .header-image{
     animation-direction:normal;
     --animate-duration: 2s;
   }
 
-@keyframes slidein{
-    from {
-      margin-left: 100%;
-      width: 200%
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-    75% {
-        font-size: 200%;
-        margin-left: 25%;
-        width: 150%;
-    }
-}
 
 .titulo1{
     color: hsl(204, 62%, 26%);
@@ -356,16 +327,18 @@ section iframe{
 }
 .container {  
     display: grid;
-    grid-template-columns: 1.1fr 1.1fr 1fr;
+    grid-template-columns: 3fr 1.1fr 1fr;
     grid-template-rows: 0.8fr 0.9fr 1.3fr;
-    grid-auto-columns: 3fr 3fr;
+    grid-auto-columns: 10fr 10fr;
     gap: 0px 0px;
     grid-auto-flow: row dense;
     justify-content: space-evenly;
     grid-template-areas:
-      "chocolate pochoclos cafe "
-      "cookies sandiaymelon milflores"
-      "milflores chocolate cookies";
+      "chocolate pochoclos"
+      "cookies cafe"
+      "cookies sandiaymelon"
+      "chocolate milflores"
+      "chocolate cookies";
     width: 73%;
     height: 73%;
   }
@@ -387,7 +360,12 @@ section iframe{
   .milflores { grid-area: milflores; }
   
   .chocolate1 { grid-area: chocolate1; }
-  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
 section h3 {
     padding-top: 50px;
     text-align: center;
@@ -454,66 +432,22 @@ footer ul li img {
     align-items: center;
     column-gap: 10px;   
 }
+.transition-soft-slow {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
 
 .made_by{
+
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-   
+    font-size: 30px;   
     text-align: center;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
-  }
-  
-  
-  /* hover styles */
-  .location-listing {
-    position: relative;
-  }
-  
-  .location-image {
-    line-height: 0;
-    overflow: hidden;
-  }
-  
-  .location-image img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-  }
-  
-  .location-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    background: rgba(90,0,10,0.4);
-    color: white;
-    
-    /* position the text in t’ middle*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .location-listing:hover .location-title {
-    opacity: 1;
-  }
-  
-  .location-listing:hover .location-image img {
-    filter: blur(2px);
-  }
-
 
 @media screen and (max-width: 360px){
     main{
@@ -542,7 +476,7 @@ footer ul li img {
      "main"
      "footer";
     }
-}
+  }
 @media screen and (max-Widht: 480px){
     main{
         grid-template-rows:repeat(6,2fr) ;
@@ -603,11 +537,36 @@ footer ul li img {
     transition: all 2s; 
     }
 }
-@media (hover: none) { 
-    .location-title {
-      opacity: 1;
+
+  @keyframes slidein{
+    from {
+      margin-left: 100%;
+      width: 200%
     }
-    .location-image img {
-      filter: blur(2px);
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
     }
-  }
+    75% {
+        font-size: 200%;
+        margin-left: 25%;
+        width: 150%;
+      }
+}
+
+@keyframes slidein{
+    from {
+      margin-left: 100%;
+      width: 200%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    75% {
+        font-size: 200%;
+        margin-left: 25%;
+        width: 150%;
+    }
+}
