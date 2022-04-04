@@ -277,7 +277,7 @@ form textarea{
 
 form fieldset input[type=submit]{
     width: auto;
-    align-content: ;
+    align-content: center;
     column-gap: normal;
 }
 
@@ -447,6 +447,76 @@ footer ul li img {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;   
     text-align: center;
+  }
+
+/*galeria*/
+img {
+    width: 100%; /* ver escritos de dimensiones */
+    height: auto;
+  }
+.galeriatitulo {
+    margin-bottom: .5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+  
+  
+  /* hover estilos */
+  .galeria-listing {
+    position: relative;
+  }
+  
+  .galeria-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .galeria-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .galeria-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    
+    /* posicion del texto en el medio*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .galeria-listing:hover .galeria-title {
+    opacity: 1;
+  }
+  
+  .galeria-listing:hover .galeria-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* otras vistas */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
   }
 
 @media screen and (max-width: 360px){
