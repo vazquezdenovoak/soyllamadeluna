@@ -6,12 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velas- Vazquez de Novoa Karen</title>
     <link rel="shortcut icon" href="imagenes/favicon-nuevo.ico">
-    <link rel="stylesheet" href="estilos/estilos2.css">
-    <link rel="stylesheet" href="estilos/estilos2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-   </head>
+    
+
+    <!-- primero  links de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+   <!-- segundo links de hojas estilos css-->
+   <link rel="stylesheet" href="estilos/estilos2.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
 <body>
+    <div class="container-fuild"></div>
+    <div class="row"></div>
     <header>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna">
+                </a>
+              <a class="navbar-brand" href="#">SOY LLAMA DE LUNA </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../paginas/productos.html">Productos</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/talleres.html">Talleres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../paginas/talleres.html">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        
+          <!--
        <nav>
         <a id="iconnavbar" href="/index.html"><img src="./imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna"></a>
            <ul>         
@@ -20,11 +83,11 @@
             <li><a href="./paginas/talleres.html">Talleres</a></li>
             <li><a href="./paginas/galeria.html">Galeria</a></li>
             <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+            <li><a href="./paginas/galeria.html"> Galeria</a></li>
             <li><a href="./paginas/contacto.html">Contacto</a></li>
            </ul>
-       </nav>
+       </nav>-->
       
-
        <div class="header-image">           
             <div class="logo animate__animated animate__backInLeft">
 			    <img class="logo" src="./imagenes/logo.png" alt="LOGO">
@@ -34,86 +97,138 @@
                 <h3 class="titulo2" > Encuentra tu esencia, enciende tu llama...  </h3> 
             </div> 
 	   </div>
-
     </header>
+<<<<<<< HEAD
     
+=======
+   </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/carrousel05.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carrousel06.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+       
+>>>>>>> RamaNuevaBoot
     <main>
 
-        <div class="titulo_Seccion"><h1>VELAS DE CERA DE SOJA</h1></div>
+        
+        </div>
+            <div class="titulo_Seccion" >
+                <div class=" container-fluid">
+                    <h2> VELAS DE CERA DE SOJA </h2>
+                    <small>Aromas para la vida...</small>
+                </div>
+        
          <!--tarjeta -->
-         <section class="section-card">
-            <div class="section-card_image"><img src="/imagenes/cajamilflores.png" alt=""></div>
+         <section  class="section-card">
+             <div class=" container-fluid">
+            <div class="section-card_image">
+                <img src="/imagenes/cajamilflores.png" alt="Mil Flores">
+            </div>
                 <div class="section-card_title">
                       <h3>Mil Flores</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
-            
+            </div>
         </section>
 
         <!--tarjeta --> 
-        <section class="section-card">
+        <section  class="section-card">
+            <div class=" container-fluid">
             <div class="section-card_image">
-                <img src="./imagenes/cajasandiamelon.png" alt="">
+                <img src="./imagenes/cajasandiamelon.png" alt="Sandia y Melon">
             </div>
                 <div class="section-card_title">
                       <h3>Sandía y Melón</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
-            
+            </div>
         </section>
 
         <!--tarjeta -->
-        <section class="section-card">
-            <div class="section-card_image"><img src="./imagenes/cajaChocolate.png" alt=""></div>
+        <section  class="section-card">
+            <div class=" container-fluid">
+                  <div class="section-card_image">
+                     <img src="./imagenes/cajaChocolate.png" alt="Chocolate">
+                   </div>
                 <div class="section-card_title">
                       <h3>Chocolate</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
+            </div>
             
         </section>
         
         <!--tarjeta -->
-        <section class="section-card">
-            <div class="section-card_image"><img src="./imagenes/cajacafe.png" alt=""></div>
+        <section  class="section-card">
+            <div class=" container-fluid">
+                <div class="section-card_image">
+                     <img src="./imagenes/cajacafe.png" alt="Cafe">
+                </div>
                 <div class="section-card_title">
                       <h3>Café</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
-            
+            </div>
         </section>
 
         <!--tarjeta -->
-        <section class="section-card">
-            <div class="section-card_image"><img src="./imagenes/cajaCookies.png" alt=""></div>
+        <section  class="section-card">
+            <div class=" container-fluid">
+            <div class="section-card_image">
+                <img src="./imagenes/cajaCookies.png" alt="Cookies">
+            </div>
                 <div class="section-card_title">
                       <h3>Cookies</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
+            </div>
         </section>
 
         <!--tarjeta -->
-        <section class="section-card">
-            <div class="section-card_image"><img src="./imagenes/cajapochoclos.png" alt=""></div>
+        <section  class="section-card">
+            <div class=" container-fluid">
+                <div class="section-card_image">
+                    <img src="./imagenes/cajapochoclos.png" alt="Pochoclos">
+                </div>
                 <div class="section-card_title">
                       <h3>Pochoclos</h3>  
                 </div>
                 <article class="section-card_text">
-                    <p>Cont. Neto: 200 cc</p>
+                    <p class="lead">Cont. Neto: 200 cc</p>
                 </article>
-            
+            </div>
         </section>
+    </div>
 
+<<<<<<< HEAD
     <!-- inicio de footer --> 
+=======
+        <!-- inicio de footer --> 
+>>>>>>> RamaNuevaBoot
     <footer >
         <ul>
 			<li><a href="https://www.instagram.com/soyllamadeluna/"><img src="./imagenes/instagram_ico.png" alt= "Instagram"></a></li>
@@ -127,6 +242,10 @@
         </div>
 	</footer>
 </main>
+
+<!--links bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>

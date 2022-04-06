@@ -40,7 +40,7 @@ header nav ul li a{
     text-decoration: none;
     
 }
-header nav img{   
+#iconNavbar{   
    display:flex;
 }
 menu{  
@@ -79,7 +79,10 @@ a:-webkit-any-link {
     background-size:cover;
     background-position-x: center;
     transition: all 2s;
-
+    -webkit-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition:cubic-bezier(0.23, 1, 0.320, 1);
+    -ms-transition:0.7s;
+    -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*texto de header*/
@@ -87,7 +90,7 @@ a:-webkit-any-link {
     animation-direction:normal;
     --animate-duration: 2s;
     animation-duration: 3s;
-    animation-name:;
+    animation-name:initial;
     
 }
 
@@ -188,7 +191,7 @@ footer .container{
 
 }
 .section-card_image img{
-    width: 80vw;    
+    width: 80vw;
     grid-area: image;
     border-radius: 10px;
     border-style:solid;
@@ -199,6 +202,10 @@ footer .container{
     border-width: 1px;
     display: block;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -webkit-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -moz-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -ms-transition: width 2s, height 2s, background-color 2s, transform 2s;
+    -o-transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 .section-card_image img :hover {
     width: 200px;
@@ -272,17 +279,21 @@ form fieldset span{
 form textarea{
     width:auto;
     margin-bottom: 20px;
-    align-content: 
+    padding: 20px;
+    text-align: center;
+
 }
 
 form fieldset input[type=submit]{
     width: auto;
     align-content: center;
     column-gap: normal;
+    text-align: center;
 }
 
 form fieldset input[type=button]{
     width: auto;
+ 
 }
 
 
@@ -324,6 +335,11 @@ section iframe{
     width: 200vw;
      height: 200vw;    
      padding: 10%;
+}
+.container
+{
+margin:0;
+padding:0
 }
 .container {  
     display: grid;
@@ -383,14 +399,10 @@ section p {
 /*form talleres*/
 fieldset legend{
     padding: 20px;
-    
     font-size:xx-large;
     font-family:Arial, 'Helvetica', sans-serif ;
     font-style: italic;
-    font-display:calc(10xp 5xp 100%);
-    
-    
-    
+    font-display:calc(10xp 5xp 100%); 
 }
 /*footer de paginas*/
 footer{
@@ -425,7 +437,6 @@ footer ul li img {
     margin-top: 20px;
     width: 40px;     
 }
-
 .copyright{
     display:flex;  
     justify-content: center;
@@ -439,7 +450,10 @@ footer ul li img {
     -o-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> RamaNuevaBoot
 
 .made_by{
 
@@ -450,12 +464,27 @@ footer ul li img {
   }
 
 /*galeria*/
+<<<<<<< HEAD
 img {
     width: 100%; /* ver escritos de dimensiones */
     height: auto;
   }
 .galeriatitulo {
     margin-bottom: .5em;
+=======
+.galeria-image {
+    width: 100%; /* ver escritos de dimensiones */
+    height: auto;
+    line-height: 0;
+    overflow: hidden;
+  }
+.galeriatitulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+>>>>>>> RamaNuevaBoot
   }
   .grid-container {
     display: grid;
@@ -467,13 +496,18 @@ img {
   /* hover estilos */
   .galeria-listing {
     position: relative;
+    top: auto;
+
   }
   
+<<<<<<< HEAD
   .galeria-image {
     line-height: 0;
     overflow: hidden;
   }
   
+=======
+>>>>>>> RamaNuevaBoot
   .galeria-image img {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
@@ -506,7 +540,23 @@ img {
   
   .galeria-listing:hover .galeria-image img {
     filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+  
+  
+  /* otras vistas */
+@media (hover: none) { 
+    .location-title {
+      opacity: 1;
+      align-content: center;
+      align-items: baseline;
+    }
+    .location-image img {
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+}
   }
+<<<<<<< HEAD
   
   
   /* otras vistas */
@@ -520,10 +570,13 @@ img {
   }
 
 @media screen and (max-width: 360px){
-    main{
-        grid-template-rows:repeat(6,2fr) ;
-      /*  grid-template-columns: repeat(2,1fr);*/
+=======
 
+@media all and (max-width: 360px){
+>>>>>>> RamaNuevaBoot
+    main{
+        grid-template-rows:repeat(6,2fr)
+      /*  grid-template-columns: repeat(2,1fr);*/
     }
     .footer{
        display: flex;     
@@ -605,6 +658,11 @@ img {
 
     .section-card{
     transition: all 2s; 
+    }
+    .section-card :hover img{
+         align-content: flex-end;
+
+
     }
 }
 
