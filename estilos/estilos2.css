@@ -450,10 +450,6 @@ footer ul li img {
     -o-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> RamaNuevaBoot
 
 .made_by{
 
@@ -464,14 +460,6 @@ footer ul li img {
   }
 
 /*galeria*/
-<<<<<<< HEAD
-img {
-    width: 100%; /* ver escritos de dimensiones */
-    height: auto;
-  }
-.galeriatitulo {
-    margin-bottom: .5em;
-=======
 .galeria-image {
     width: 100%; /* ver escritos de dimensiones */
     height: auto;
@@ -484,7 +472,6 @@ img {
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
->>>>>>> RamaNuevaBoot
   }
   .grid-container {
     display: grid;
@@ -500,14 +487,6 @@ img {
 
   }
   
-<<<<<<< HEAD
-  .galeria-image {
-    line-height: 0;
-    overflow: hidden;
-  }
-  
-=======
->>>>>>> RamaNuevaBoot
   .galeria-image img {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
@@ -556,24 +535,8 @@ img {
       -webkit-filter: blur(2px);
 }
   }
-<<<<<<< HEAD
-  
-  
-  /* otras vistas */
-  @media (hover: none) { 
-    .location-title {
-      opacity: 1;
-    }
-    .location-image img {
-      filter: blur(2px);
-    }
-  }
-
-@media screen and (max-width: 360px){
-=======
 
 @media all and (max-width: 360px){
->>>>>>> RamaNuevaBoot
     main{
         grid-template-rows:repeat(6,2fr)
       /*  grid-template-columns: repeat(2,1fr);*/
