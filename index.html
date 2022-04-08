@@ -24,7 +24,7 @@
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a href="../index.html">
-                    <img src="../imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna">
+                    <img src="imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna">
                 </a>
               <a class="navbar-brand" href="#">SOY LLAMA DE LUNA </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -44,7 +44,7 @@
                         <a class="nav-link active" aria-current="page" href="../paginas/galeria.html">Galeria</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="paginas/talleres.html">Talleres</a>
+                        <a class="nav-link active" aria-current="page" href="../paginas/talleres.html">Talleres</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
@@ -76,11 +76,12 @@
         
           <!--
        <nav>
-        <a href="/index.html"><img src="./imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna"></a>
+        <a id="iconnavbar" href="/index.html"><img src="./imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna"></a>
            <ul>         
             <input class="Buscador" autocomplete="off" type="search" name="q" placeholder="Buscar" aria-label="Buscador">    
             <li><a href="./paginas/productos.html">Productos</a></li>
             <li><a href="./paginas/talleres.html">Talleres</a></li>
+            <li><a href="./paginas/galeria.html">Galeria</a></li>
             <li><a href="./paginas/nosotros.html">Nosotros</a></li>
             <li><a href="./paginas/galeria.html"> Galeria</a></li>
             <li><a href="./paginas/contacto.html">Contacto</a></li>
@@ -123,6 +124,7 @@
         </div>
             <div class="titulo_Seccion" >
                 <div class=" container-fluid">
+              
                     <h2> VELAS DE CERA DE SOJA </h2>
                     <small>Aromas para la vida...</small>
                 </div>
@@ -130,11 +132,15 @@
          <!--tarjeta -->
          <section  class="section-card">
              <div class=" container-fluid">
-            <div class="section-card_image">
-                <img src="/imagenes/cajamilflores.png" alt="Mil Flores">
-            </div>
+              <div class="row ">
+                <div class="col-md-4">
+                  <div class="section-card_image">
+                    <img  src="/imagenes/cajamilflores.png" class="rounded-circle" alt="Mil Flores">
+                  </div>
+                  </div>
+                  </div>
                 <div class="section-card_title">
-                      <h3>Mil Flores</h3>  
+                   <h3>Mil Flores</h3>  
                 </div>
                 <article class="section-card_text">
                     <p class="lead">Cont. Neto: 200 cc</p>
@@ -145,9 +151,13 @@
         <!--tarjeta --> 
         <section  class="section-card">
             <div class=" container-fluid">
-            <div class="section-card_image">
-                <img src="./imagenes/cajasandiamelon.png" alt="Sandia y Melon">
-            </div>
+              <div class="row ">
+                <div class="section-card_image">
+                <div class="col-md-4">
+                <img src="./imagenes/cajasandiamelon.png" class="rounded-circle" alt="Sandia y Melon">
+              </div>
+          </div>
+        </div>
                 <div class="section-card_title">
                       <h3>Sandía y Melón</h3>  
                 </div>
@@ -161,7 +171,7 @@
         <section  class="section-card">
             <div class=" container-fluid">
                   <div class="section-card_image">
-                     <img src="./imagenes/cajaChocolate.png" alt="Chocolate">
+                     <img src="./imagenes/cajaChocolate.png" class="rounded-circle" alt="Chocolate">
                    </div>
                 <div class="section-card_title">
                       <h3>Chocolate</h3>  
@@ -177,7 +187,7 @@
         <section  class="section-card">
             <div class=" container-fluid">
                 <div class="section-card_image">
-                     <img src="./imagenes/cajacafe.png" alt="Cafe">
+                     <img src="./imagenes/cajacafe.png" class="rounded-circle" alt="Cafe">
                 </div>
                 <div class="section-card_title">
                       <h3>Café</h3>  
@@ -192,7 +202,7 @@
         <section  class="section-card">
             <div class=" container-fluid">
             <div class="section-card_image">
-                <img src="./imagenes/cajaCookies.png" alt="Cookies">
+                <img src="./imagenes/cajaCookies.png" class="rounded-circle" alt="Cookies">
             </div>
                 <div class="section-card_title">
                       <h3>Cookies</h3>  
@@ -207,7 +217,7 @@
         <section  class="section-card">
             <div class=" container-fluid">
                 <div class="section-card_image">
-                    <img src="./imagenes/cajapochoclos.png" alt="Pochoclos">
+                    <img src="./imagenes/cajapochoclos.png" class="rounded-circle" alt="Pochoclos">
                 </div>
                 <div class="section-card_title">
                       <h3>Pochoclos</h3>  
