@@ -317,7 +317,7 @@ textarea{
     text-align: center;  
 }
 
-body section.header-nos h3 {
+body section .header-nos h3 {
     text-align: center;    
     margin: auto;
     font-size:xx-large;
@@ -707,4 +707,4 @@ footer ul li img {
         margin-left: 25%;
         width: 150%;
     }
-}
+}}
