@@ -6,7 +6,6 @@
 
 body{
     overflow-x: hidden;
-    background-color: rgb(176, 206, 245);
 }
 
 
@@ -16,7 +15,7 @@ header nav {
     align-items: center;
     justify-content: center;
     column-gap: 20px;  
-    background-color: rgb(193, 197, 199);
+    
     color: rgba(3, 0, 8, 0.63); 
     position: sticky;
     top:0; 
@@ -182,12 +181,10 @@ main{
     grid-column-end:4;
     grid-area: 
     section-card_title, section-card_title, section-card_title;
-
-       
+    
 }
 footer .container{
     display: grid;
-    
 
 }
 .section-card_image img{
@@ -218,85 +215,98 @@ footer .container{
     background-image: url("../imagenes/backgroundHeader.jpg");
     background-size:cover;
     background-position-x: center; 
-    text-align: center;   
-    
+    text-align: center;     
 }
 
 .header-cel {  
-    display:grid;
+    background: none;
     margin: auto;
-    width: 80%; 
+    width: 60vw; 
     transition: all 2s;   
 }
 .header-cel img{
     margin:auto;
-    margin-top: 50px;
-    display: block;
     align-content: center;
-    align-items: center;
     width: 50vw;
     filter: drop-shadow(-10px 10px 8px rgba(0, 0, 0, 0.432)); 
 }
+/*--FORMULARIO DE CONTACTO--*/
 
 .contacto{
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-image: url(../imagenes/backgroundhead8.jpg);
+    background-position-x: center;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form{
+        width:450px;
+        margin: auto;
+        background:rgba(66, 61, 61, 0.4);
+        padding: 10 px 20 px;
+        box-sizing: border-box;
+        margin-top: 20 px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+}
+.contact {
+    padding: 60px;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
 }
 form label {
     margin: 5px;
     width: 70%;
     text-align: center;
     align-content: center;
+}
 
-}
-input {
-    width: 40%;
-}
 form fieldset {
     padding: 20px;
     margin-bottom: 30px;
-    border:none;
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 1vw;
-    text-align:left;
-    background-color: rgba(255, 0, 191, 0.151);
+    background-color: rgba(155, 6, 88, 0.151);
 }
 
-form fieldset span{
+input, textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
     display: flex;
-    flex-direction:column-reverse;
-    align-items: center;
-    text-align: center;   
+    flex:content;
+    border:none;
 }
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
 
-form textarea{
-    width:auto;
-    margin-bottom: 20px;
+}
+#boton{
+    background:#b7094c ;
+    color:beige ;
     padding: 20px;
     text-align: center;
-
+    
 }
-
-form fieldset input[type=submit]{
-    width: auto;
-    align-content: center;
-    column-gap: normal;
-    text-align: center;
+#boton:hover{
+    cursor: pointer;
 }
-
-form fieldset input[type=button]{
-    width: auto;
  
-}
-
 
 /*----pagina nosotros----*/
 .header-nos{
@@ -568,6 +578,7 @@ footer ul li img {
       -webkit-filter: blur(2px);
 }
   }
+  
 
 @media all and (max-width: 360px){
     main{
@@ -613,6 +624,8 @@ footer ul li img {
         "main"
         "footer";
     }
+    form{
+        width: 100%;
 }
 
 @media screen and (max-width: 425px) {
@@ -629,11 +642,7 @@ footer ul li img {
         "main"
         "footer";
     }
-    .justify-content-around{
-
-
-    }
-    
+        
 }
 
 @media screen and (max-Widht: 720px){

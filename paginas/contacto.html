@@ -89,42 +89,37 @@
     <!-- FORMULARIO -->
     
 
-    <section class="header-nosotros">  
+    <section class="contacto">  
 
-        <h3>CONTACTO:</h3>
+        <h3 class="contact">CONTACTO:</h3>
         
-        <form class="contacto"> 
+        <form action=""> 
             <!--Nombre del contacto -->
-            <label for="nombre">NOMBRE: </label>
-            <input type="text" placeholder="Nombre y apellido" value="" name="nombre">
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" >
             
             <!--Correo -->
-            <label for="correo"> E-MAIL: </label>
-            <input type="email" name="" id="" placeholder="ejemplo@sitio.com" value="" name="correo">
+            <input type="text" name="Correo" placeholder="e-mail" >
                        
             <!--Telefono -->
-            <label for="telefono">TELEFONO: </label>
-            <input type="tel" name="telefono" id="" placeholder="Ingrese su telefono" value="">
+             <input type="text" name="telefono" placeholder="Telefono" >
             
             <!--Mensaje -->
-            <label for="mensaje">DEJENOS SU MENSAJE: </label>
-            <textarea class="form-floating" name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui..."></textarea>
+            <textarea  name=" mensaje"  placeholder="Escriba aqui su mensaje.."></textarea>
        
-            <!--Radio (Elegir solo una opción) -->
-            
-            <fieldset name= "servicios">              
-                <span><input type="radio" name="cliente" value="mayorista">Cliente Mayorista</span> 
-                <span><input type="radio" name="cliente" value="minorista" >Cliente Minorista</span>
-                <span><input type="radio" name="cliente" value="proveedor">Proveedor </span>        
+            <!--Radio (Elegir solo una opción) -->            
+            <fieldset>              
+                <span><input type="radio" name="cliente" value="mayorista"> Cliente Mayorista</span>
+                <span><input type="radio" name="cliente" value="minorista" > Cliente Minorista</span>
+                <span><input type="radio" name="cliente" value="proveedor"> Proveedor </span>
             </fieldset>
 
             <fieldset >
                 <!--CheckBox -->
-                    <span><input type="checkbox" name="acepta" value="1">Quiero recibir información por Correo
+                <span> <input type="checkbox" name="acepta" value="1"> Quiero recibir información por Correo </span>
             </fieldset> 
 
             <fieldset > 
-                    <span><input type="checkbox" name="acepta" value="2">Acepto terminos y condiciones de mi información personal           
+              <span> <input type="checkbox" name="acepta" value="2"> Acepto terminos y condiciones de mi información personal </span>            
             </fieldset>
                           
             <!--Desplegable -->
@@ -141,22 +136,22 @@
             </fieldset>
             <!-- BOTONES -->
             <!--Boton para enviar-->
-            <fieldset>
-                <input type="submit" value="Enviar formulario">
-            <!--Boton para javascript-->
+            <fieldset >
+                <input type="button" value="Enviar formulario" id="boton">
+                
+            </fieldset>
+            <!--Boton para javascript
+            <fieldset >
                 <input type="button" value="reservado para javascript">
-             </fieldset>
+             </fieldset>-->
         </form>
        
     </section>
-
-    
     <div class="header-cel">
-        <img src="../imagenes/cel_contacto.png" alt="">
+       <img src="../imagenes/cel_contacto.png" alt="">
     </div>
-
  
-
+</div>
     <!-- inicio de footer --> 
     <footer >
         <ul>
