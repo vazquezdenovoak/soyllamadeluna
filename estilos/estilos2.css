@@ -212,7 +212,7 @@ footer .container{
     height: 200px;
     transform: rotate(360deg);
 }
-/*formulario de contacto*/
+/*----formulario de contacto-------*/
 .header-nosotros{
     padding-top: 50px;
     background-image: url("../imagenes/backgroundHeader.jpg");
@@ -248,6 +248,7 @@ form label {
     margin: 5px;
     width: 70%;
     text-align: center;
+    align-content: center;
 
 }
 input {
@@ -297,7 +298,7 @@ form fieldset input[type=button]{
 }
 
 
-/*pagina nosotros*/
+/*----pagina nosotros----*/
 .header-nos{
     padding-top: 50px;
     background-image: url("../imagenes/backgroundHeader.jpg");
@@ -331,11 +332,39 @@ section iframe{
     width: 80vw;
     height: 50vh;
 }
- video{
-    width: 200vw;
-     height: 200vw;    
-     padding: 10%;
+/*---VIDEOS--*/
+.containervideo{
+    background-color: #6a040f;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    width: 100%;
+    }
+    .containervideo iframe{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    height: 300px;
+    width: 300px;
+    box-shadow:5px 5px 1px 2px #5ed9f2; 
+    }
+    .containervideo h2{
+    font-family: 'Permanent Marker', cursive;
+    color: #b7094c;
+    font-size: 34px;
+    height: 8rem;
+    margin-top: 2rem;
+    }
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 .container
 {
 margin:0;
@@ -357,6 +386,8 @@ padding:0
       "chocolate cookies";
     width: 73%;
     height: 73%;
+    margin:0;
+    padding:0
   }
   
   .pochoclos { grid-area: pochoclos; }
@@ -477,6 +508,8 @@ footer ul li img {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
+    padding-top: 10px;
+    margin-top: 0;
   }
   
   
@@ -596,6 +629,11 @@ footer ul li img {
         "main"
         "footer";
     }
+    .justify-content-around{
+
+
+    }
+    
 }
 
 @media screen and (max-Widht: 720px){
