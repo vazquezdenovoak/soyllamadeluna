@@ -1,0 +1,18 @@
+h1 {
+  color: red; }
+
+header {
+  background-color: aqua; }
+  header p {
+    font-size: 24px; }
+
+h2 {
+  color: beige; }
+
+ul {
+  color: black; }
+  ul .menu {
+    list-style-type: none;
+    padding: 25px; }
+    ul .menu .menuEnlance {
+      text-decoration: none; }

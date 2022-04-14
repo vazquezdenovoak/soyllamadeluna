@@ -1,0 +1,25 @@
+h1 {
+    color:red;
+}
+header {
+    background-color:aqua ;
+
+    p {
+        font-size: 24px;
+    }
+}
+h2 {
+    color:beige;
+}
+
+ul{
+    color:black;
+    .menu {
+        list-style-type: none;
+        padding: 25px;
+        .menuEnlance{
+            text-decoration: none;
+        }
+    }
+}
+
