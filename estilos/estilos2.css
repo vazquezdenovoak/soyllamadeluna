@@ -65,6 +65,29 @@ a:any-link {
 a:-webkit-any-link {
     border: none;
 }
+/* BOTONES DE INDEX, HOME*/
+.button-shadowrose {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #ff0a78;
+}
+.button-shadowrose:hover {
+  background-color: #ff6392;
+}
+.button-shadowrose:active {
+  top: 2px;
+}
 
 /*estilo de imagen de header y texto*/
 .header-image{
@@ -594,13 +617,17 @@ footer ul li img {
   /* otras vistas */
 @media (hover: none) { 
     .galeria-title {
-      opacity: 1;
-      align-content: center;
-      align-items: baseline;
+    opacity: 1;
+    font-weight: bold;      
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     }
     .galeria-image img {
-      filter: blur(2px);
-      -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
   }
   
