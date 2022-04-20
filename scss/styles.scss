@@ -11,7 +11,7 @@
 /*galeria*/
 /* hover estilos */
 /* otras vistas */
-@keyframes "slidein" {
+@keyframes slidein {
 	from {
 		margin-left: 100%;
 		width: 200%;
@@ -26,7 +26,7 @@
 		width: 150%;
 	}
 }
-@keyframes "slidein" {
+@keyframes slidein {
 	from {
 		margin-left: 100%;
 		width: 200%;
@@ -289,20 +289,6 @@ footer {
 	background-size: cover;
 	background-position-x: center;
 	text-align: center;
-}
-.header-cel {
-	background: linear-gradient(to right, rgb(217, 167, 199), rgb(255, 252, 220));
-	background-size: auto;
-	background-attachment: fixed;
-	transition: all 2s;
-	img {
-		width: 50vw;
-		filter: drop-shadow(-10px 10px 8px rgba(0, 0, 0, 0.432));
-		padding: 10px 20px;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
 }
 .contacto {
 	background-image: url(../imagenes/contactanos.jpg);
@@ -600,9 +586,14 @@ fieldset {
 @media (hover: none) {
 	.galeria-title {
 		opacity: 1;
+		font-weight: bold;      
+		z-index: 1;
+		position: absolute;
+		display: flex;
 		align-content: center;
-		align-items: baseline;
-	}
+		justify-content: center;
+			}
+	
 	.galeria-image {
 		img {
 			filter: blur(2px);
@@ -649,18 +640,11 @@ fieldset {
 	form {
 		width: 100%;
 	}
-	@media {
-		screen {
-			and {
-				(max-width: {
-					425px) {
+	@media screen and (max-width:425px) {
 						*{ font-size: 1em;
 					}
 				}
-			}
-		}
-	}
-}
+			}	
 @media screen and (max-Widht: 720px) {
 	main {
 		grid-template-rows: repeat(6,2fr);

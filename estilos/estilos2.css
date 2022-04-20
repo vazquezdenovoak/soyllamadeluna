@@ -258,21 +258,6 @@ footer .container{
     text-align: center;     
 }
 
-.header-cel {  
-    background: linear-gradient(to right, rgb(217, 167, 199), rgb(255, 252, 220));
-    background-size: auto ;
-    background-attachment: fixed;
-
-    transition: all 2s;   
-}
-.header-cel img{        
-        width: 50vw;
-        filter: drop-shadow(-10px 10px 8px rgba(0, 0, 0, 0.432));
-        padding: 10px 20px;         
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-}
 /*--FORMULARIO DE CONTACTO--*/
 
 .contacto{
@@ -360,17 +345,16 @@ textarea{
 #boton:hover{
     cursor: pointer;
 }
- 
-
 /*----pagina nosotros----*/
 .header-nos{
     padding-top: 50px;
     background-image: url("../imagenes/backgroundHeader.jpg");
     background-size:cover;
-    background-position-x: center; 
-    text-align: center;  
+    background-position-x: center;  
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
-
 body section .header-nos h3 {
     text-align: center;    
     margin: auto;
@@ -381,13 +365,16 @@ section.header-nos p {
     text-align: justify;
     font-size: medium;     
 }
-
 #logo_nosotros{
     width: 50vw;
-    padding-bottom: 20px;
-    filter: opacity(65%);
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(35%);
+    -webkit-filter: opacity(35%);
 
+}
 section iframe{
     display: block;
     margin: auto;
@@ -470,10 +457,7 @@ padding:0
   }
 .btnvermas{
     background-color: rgb(231, 154, 231);
-
-    
 }
-
 section h3 {
     padding-top: 50px;
     text-align: center;
@@ -481,7 +465,6 @@ section h3 {
     margin:auto;
     margin-bottom: 50px;
 }
-
 section p {     
     font-family: 'Hurricane', cursive;
     text-align: center;
@@ -496,6 +479,11 @@ fieldset legend{
     font-style: italic;
     font-display:calc(10xp 5xp 100%); 
 }
+/* Pagina taller*/
+.container-fluid{
+  text-decoration: dotted;
+  text-align: center; 
+}
 /*footer de paginas*/
 footer{
    width: 100vw;
@@ -504,7 +492,6 @@ footer{
    background-size:cover;
    color: rgba(3, 0, 8, 0.63);        
 }
-
 footer  ul {
     display: flex;     
     flex-wrap: wrap;
@@ -512,17 +499,14 @@ footer  ul {
     column-gap: 30px;
     width: 5fr;
     height: 5fr;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 footer  ul li{
     list-style-type: none;    
 }
-
 footer ul li a{
     text-decoration: none;    
 }
-
 footer ul li img {
     display: flex;  
     column-gap: 20px; 
@@ -542,14 +526,12 @@ footer ul li img {
     -o-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-
 .made_by{
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;   
     text-align: center;
   }
-
 /*galeria*/
 .galeria-image {
     width: 100%; /* ver escritos de dimensiones */
@@ -571,8 +553,6 @@ footer ul li img {
     padding-top: 10px;
     margin-top: 0;
   }
-
-  
   /* hover estilos */
 .galeria-listing {
     position: relative;
@@ -583,7 +563,6 @@ footer ul li img {
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
   }
-  
 .galeria-title {
     font-size: 1.5em;
     font-weight: bold;
@@ -597,8 +576,7 @@ footer ul li img {
     opacity: 0;
     transition: opacity .5s;
     background: rgba(90,0,10,0.4);
-    color: white;
-    
+    color: white; 
     /* posicion del texto en el medio*/
     display: flex;
     align-items: center;
@@ -607,13 +585,10 @@ footer ul li img {
 .galeria-listing:hover .galeria-title {
     opacity: 1;
   }
-  
 .galeria-listing:hover .galeria-image img {
     filter: blur(2px);
     -webkit-filter: blur(2px);
-}
-  
-  
+} 
   /* otras vistas */
 @media (hover: none) { 
     .galeria-title {
@@ -628,10 +603,9 @@ footer ul li img {
     .galeria-image img {
     filter: blur(2px);
     -webkit-filter: blur(2px);
+    
 }
   }
-  
-
 @media all and (max-width: 360px){
     main{
         grid-template-rows:repeat(6,2fr)
@@ -645,10 +619,8 @@ footer ul li img {
        width: 5fr;
        height: 5fr;
     }
-
     .section-card{
-    transition: all 2s; 
-    
+    transition: all 2s;   
     }
     .container{
      grid-template-columns: 1fr;
@@ -663,7 +635,6 @@ footer ul li img {
     main{
         grid-template-rows:repeat(6,2fr) ;
       /*  grid-template-columns: repeat(2,1fr);*/
-
     }
     .section-card{
     transition: all 2s; 
@@ -679,13 +650,10 @@ footer ul li img {
     form{
         width: 100%;
 }
-
 @media screen and (max-width: 425px) {
-
     *{
         font-size: 1em;
     }
-
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
@@ -693,16 +661,12 @@ footer ul li img {
         "header"
         "main"
         "footer";
-    }
-        
+    }        
 }
-
 @media screen and (max-Widht: 720px){
-
     main{
-        grid-template-rows:repeat(6,2fr) ;
-      /*  grid-template-columns: repeat(2,1fr);*/
-
+    grid-template-rows:repeat(6,2fr) ; 
+    /*grid-template-columns: repeat(2,1fr);*/
     }
     footer{
        display: flex;     
@@ -717,24 +681,19 @@ footer ul li img {
        justify-items: center;
        align-items: center; 
     }
-
     .section-card{
     transition: all 2s; 
     }
     .section-card :hover img{
          align-content: flex-end;
-
-
     }
 }
-
   @keyframes slidein{
     from {
       margin-left: 100%;
       width: 200%
     }
-  
-    to {
+     to {
       margin-left: 0%;
       width: 100%;
     }
@@ -744,7 +703,6 @@ footer ul li img {
         width: 150%;
       }
 }
-
 @keyframes slidein{
     from {
       margin-left: 100%;

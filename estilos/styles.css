@@ -16,3 +16,11 @@ ul {
     padding: 25px; }
     ul .menu .menuEnlance {
       text-decoration: none; }
+      @import "estructura";
+      @import "variables";
+      @import "sass2";
+      @import "quienesSomos";
+      @import "dondeEncontrarlas";
+      @import "footer";
+      @import "mediaqS1";
+      @import "mediaqS3";
