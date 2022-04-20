@@ -3,12 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     overflow-x: hidden;
 }
-
-
 header nav {
     height: 50px;
     display: flex;
@@ -23,7 +20,6 @@ header nav {
 header nav ul li:hover{
     background-color: #2b649659; 
 }
- 
 /*texto del navbar*/
 header nav ul {
     display: flex;       
@@ -35,8 +31,7 @@ header nav ul li{
     list-style-type: none;
 }
 header nav ul li a{
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 #iconNavbar{   
    display:flex;
@@ -56,8 +51,6 @@ menu{
     width: 100%;
     background-color: rgb(248, 212, 212);
 }
-
-
 /*cambio de color de los links*/
 a:any-link {
     border: none; 
@@ -88,7 +81,6 @@ a:-webkit-any-link {
 .button-shadowrose:active {
   top: 2px;
 }
-
 /*estilo de imagen de header y texto*/
 .header-image{
     width: 100%;
@@ -106,7 +98,6 @@ a:-webkit-any-link {
     -ms-transition:0.7s;
     -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 /*texto de header y animaciones + INDEX*/
 .titulo{
     animation-direction:normal;
@@ -169,8 +160,7 @@ main{
 
 .section-card_title{
     display: grid;
-    grid-template-rows: min-content;
-    
+    grid-template-rows: min-content;    
     grid-area: "title, title";  
     color: rgba(14, 14, 85, 55%);  
         
@@ -216,11 +206,9 @@ display: grid;
 .content-1 {
     grid-area: "content-1";
   }
-  
   .content-2 {
     grid-area: "content-2";
   }
-  
   .content-3 {
     grid-area: "content-3";
   }
@@ -240,10 +228,6 @@ footer .container{
         grid-row: 4 / 5;
         grid-column: 1 / 4;
 }
-      
-
-
-
 .section-card_image img :hover {
     width: 100px;
     height: 100px;
@@ -257,9 +241,7 @@ footer .container{
     background-position-x: center; 
     text-align: center;     
 }
-
 /*--FORMULARIO DE CONTACTO--*/
-
 .contacto{
     background-image: url(../imagenes/contactanos.jpg);
     background-position-x: center;
@@ -286,8 +268,7 @@ form{
     text-align: center;
     margin: 0;
     font-size: 30px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 form label {
     margin: 5px;
@@ -295,7 +276,6 @@ form label {
     text-align: center;
     align-content: center;
 }
-
 form fieldset {
     padding: 20px;
     margin-bottom: 30px;
@@ -307,7 +287,6 @@ form fieldset {
     align-items: center;
     background-color: rgba(155, 6, 88, 0.151);
 }
-
 input, textarea{
     width: 100%;
     margin-bottom: 30px;
@@ -323,13 +302,12 @@ input, textarea{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
- 
-  input:-webkit-autofill {
+input:-webkit-autofill {
     border: 3px solid blue;
-  }
-  input:autofill {
+}
+input:autofill {
     border: 3px solid blue;
-  }
+}
 textarea{
     min-height: 100px;
     max-height: 200px;
@@ -339,8 +317,7 @@ textarea{
     background:#b7094c ;
     color:beige ;
     padding: 20px;
-    text-align: center;
-    
+    text-align: center;   
 }
 #boton:hover{
     cursor: pointer;
@@ -365,15 +342,12 @@ section.header-nos p {
     text-align: justify;
     font-size: medium;     
 }
-#logo_nosotros{
-    width: 50vw;
+#logo_nosotros{ 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50vw;
+      
     filter: opacity(35%);
     -webkit-filter: opacity(35%);
-
 }
 section iframe{
     display: block;
@@ -407,7 +381,6 @@ section iframe{
     height: 8rem;
     margin-top: 2rem;
 }
-
 .container{
 margin:0;
 padding:0
@@ -471,6 +444,8 @@ section p {
     font-size: medium;       
     margin: 50px;
 }
+/* Pagina taller*/
+
 /*form talleres*/
 fieldset legend{
     padding: 20px;
@@ -479,10 +454,18 @@ fieldset legend{
     font-style: italic;
     font-display:calc(10xp 5xp 100%); 
 }
-/* Pagina taller*/
+
 .container-fluid{
-  text-decoration: dotted;
-  text-align: center; 
+    text-align:center; 
+    margin: auto;
+}
+#logo_talleres{    
+    position:absolute; 
+    display: flex;
+   flex-direction: row-reverse;
+    width: 50vw;
+    filter: opacity(35%);
+    -webkit-filter: opacity(35%);
 }
 /*footer de paginas*/
 footer{
@@ -492,7 +475,7 @@ footer{
    background-size:cover;
    color: rgba(3, 0, 8, 0.63);        
 }
-footer  ul {
+footer ul{
     display: flex;     
     flex-wrap: wrap;
     justify-content: center;
@@ -501,7 +484,7 @@ footer  ul {
     height: 5fr;
     justify-content: center;  
 }
-footer  ul li{
+footer ul li{
     list-style-type: none;    
 }
 footer ul li a{
