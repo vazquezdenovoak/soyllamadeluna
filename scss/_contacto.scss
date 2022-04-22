@@ -15,6 +15,91 @@
 
 .consultas{
     @include displays(grid, 1fr);
-
     height: 40vh;
+}
+.contacto{
+    background-image: url(../imagenes/contactanos.jpg);
+    background-position-x: center;
+    background-size: 100vw ;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+   form{
+        width:450px;
+        margin: auto;
+        background:rgba(66, 61, 61, 0.4);
+        padding: 10 px 20 px;
+        box-sizing: border-box;
+        margin-top: 20 px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    label {
+            margin: 5px;
+            width: 70%;
+            text-align: center;
+            align-content: center;
+        }
+}
+.contact {
+    padding: 60px;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;   
+}
+form label {
+    margin: 5px;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+}
+form fieldset {
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(155, 6, 88, 0.151);
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    display: flex;
+    flex:content;
+    border: 3px solid grey;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+input:-webkit-autofill {
+    border: 3px solid blue;
+}
+input:autofill {
+    border: 3px solid blue;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background:#b7094c ;
+    color:beige ;
+    padding: 20px;
+    text-align: center;   
+}
+#boton:hover{
+    cursor: pointer;
 }
