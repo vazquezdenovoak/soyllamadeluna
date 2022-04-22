@@ -200,21 +200,6 @@ footer ul li img {
   font-size: 30px;
   text-align: center; }
 
-#gridindex {
-  display: grid;
-  grid-template-areas: " concepto concepto "
- " concepto2 concepto2 "
- " queEs img1 "
- " queEs2 img1"
- " . . "
- " img2 ser "
- " img2 ser2 "
- " . .";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 200px 200px 200px 500px 200px 200px 500px 100px;
-  justify-items: center;
-  padding: 20px 20px 0px 20px;
-  text-align: center; }
 
 fieldset legend {
   padding: 20px;

@@ -1,0 +1,17 @@
+cambios :
+
+galeria sass se uso Extend
+ contacto de sass se uso mixin
+ Index se agrega  map y map get
+
+ cambios:
+♦ Se modificaron los titulos en todas las páginas haciendo referencia en la que esta posicionada
+♦ Se agregó una etiqueta meta Keywords en todas las páginas:
+"keywords:- velas, cera, soja, aromas, argentina, buenos aires, velas de soja, decoracion"
+♦ Se agregó una etiqueta meta description en todos los sitios
+"Soy llama de Luna es un emprendimiento que surgio principalemente de la INNOVACIÓN de los perfumes y del producto, siguiendo los sentimientos del consumidor que es el que crea las tendencias.
+ Nuestra personalidad inquieta unida a las ganas de crear, nos ha llevado a investigar los distintos formatos de difusión natural para que puedas disfrutar relajacion, dversos aromas y mucho más.">  
+♦ Se agrego Meta etiqueta Robot a todas las paginas
+♦ Agregue en las imagenes del sitio que faltaba descripcion con un atributo alt
+♦ Se agrego favicon de logos y se optimizaron imagenes
+♦ Se ordenaron los titulos los p y los h en todas las paginas
