@@ -1,0 +1,19 @@
+@import "_mixins.scss";
+
+.card-prueba {
+    @include card-prueba;
+
+    .card-img-prueba{
+
+    }
+    .card-title-prueba{
+
+    }
+    .card-content-prueba{
+
+    }
+    .card-btn-prueba{
+
+    }
+
+}

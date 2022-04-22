@@ -561,16 +561,17 @@ footer ul li img {
     transition: opacity .5s;
     background: rgba(90,0,10,0.4);
     color: white;
-    /*posiciondeltextoenelmedio*/display: flex;
+    /*posiciondeltextoenelmedio*/
+    display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .galeria-listing:hover .galeria-title {
-    opacity: 1;
+    opacity: 0.5;  sdqws
   }
 .galeria-listing:hover .galeria-image img {
     filter: blur(2px);

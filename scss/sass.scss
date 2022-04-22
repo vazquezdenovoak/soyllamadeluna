@@ -32,31 +32,4 @@ $imagenes: (
     sandiaymelon: url(../imagenes/veladesandia1.jpg),
     milflores: url(../imagenes/milflorespasto.jpg),
     coockies: url(../imagenes/cajaCookies.png),
-
-
-// EXTEND
-
-.titulo1{
-    margin-bottom: 30px;
-    padding-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    background-color: #12473b7a;
-    background-image: linear-gradient(to bottom, #00000000, #000000b8);
-}
-
-btn{
-    padding: 8px 15px;
-    height: 30px;
-    margin: 25px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 800;
-    border-radius: 10px;
-  
-  }
+)
