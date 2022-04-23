@@ -78,7 +78,7 @@ input, textarea {
   -o-border-radius: 3px; }
 
 input:-webkit-autofill {
-  border: 3px solid rgb(26, 26, 253); }
+  border: 3px solid blue; }
 
 input:autofill {
   border: 3px solid blue; }
@@ -89,7 +89,7 @@ textarea {
   max-width: 100%; }
 
 #boton {
-  background: #df40a2;
+  background: #b7094c;
   color: beige;
   padding: 20px;
   text-align: center; }
@@ -111,7 +111,7 @@ textarea {
       justify-content: center;
       column-gap: 20px;
       color: rgba(3, 0, 8, 0.63);
-      position: sticky;
+      position: fixed;
       top: 0;
       z-index: 100; }
       * body header nav {
@@ -200,7 +200,6 @@ footer ul li img {
   font-size: 30px;
   text-align: center; }
 
-
 fieldset legend {
   padding: 20px;
   font-size: xx-large;
@@ -220,12 +219,61 @@ fieldset legend {
   filter: opacity(35%);
   -webkit-filter: opacity(35%); }
 
+/*mixin*/
+/*btn*/
+.btn-pink {
+  display: block;
+  width: 150px;
+  height: 30px;
+  outline: 1px solid #fcdce8;
+  color: #dfcbd5;
+  border-radius: 15px;
+  background-color: #cc2ab1; }
+
+/*btn*/
+.btn-beige {
+  display: block;
+  width: 150px;
+  height: 30px;
+  outline: 1px solid #fcdce8;
+  color: #dfcbd5;
+  border-radius: 15px;
+  background-color: #fcdce8; }
+
+/*btn*/
+.btn-black {
+  display: block;
+  width: 150px;
+  height: 30px;
+  outline: 1px solid #fcdce8;
+  color: #dfcbd5;
+  border-radius: 15px;
+  background-color: #242223; }
+
 .card-prueba {
   width: 250px;
-  height: 500px; }
+  height: 250px;
+  outline: 2px solid #cc2ab1; }
+  .card-prueba .card-img-prueba {
+    padding: 10px; }
+  .card-prueba .card-title-prueba {
+    text-align: center;
+    background-color: blanchedalmond;
+    color: #fcdce8; }
+  .card-prueba .card-content-prueba {
+    width: 30px;
+    height: 10px;
+    outline: 1px solid #cc2ab1; }
+  .card-prueba .card-btn-prueba {
+    display: block;
+    width: 150px;
+    height: 30px;
+    outline: 1px solid #fcdce8;
+    color: #dfcbd5;
+    border-radius: 15px; }
 
-p {
-  color: red; }
+.condicional {
+  color: pink; }
 
 @keyframes slidein {
   from {
@@ -264,7 +312,7 @@ body {
     font-size: xx-large; }
 
 header nav {
-  height: 50px;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,21 +357,20 @@ a:any-link {
 a:-webkit-any-link {
   border: none; }
 
+.headerCarrousel {
+  margin-top: 48px; }
+
 .header-image {
-  width: 100%;
-  height: calc(100vh - 50px);
+  margin-top: 50px;
+  padding-top: 100px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-color: #d1b5ec;
   background-image: url("../imagenes/backgroundHeader.jpg");
   background-size: cover;
   background-position-x: center;
   transition: all 2s;
-  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  -moz-transition: cubic-bezier(0.23, 1, 0.32, 1);
-  -ms-transition: 0.7s;
-  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-direction: normal;
   --animate-duration: 2s; }
 
@@ -356,9 +403,9 @@ a:-webkit-any-link {
 .logo img {
   display: flex;
   flex-direction: row;
-  width: 30vw;
+  width: 20vw;
   height: auto;
-  padding-bottom: 25px;
+  padding-left: 25px;
   font-weight: bold; }
 
 main {
@@ -370,9 +417,8 @@ main {
   grid-template-columns: repeat(1fr, 1fr); }
 
 .titulo_Seccion {
-  margin-top: 30px;
   padding: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT'," Calibri ", 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', " Calibri ", 'Trebuchet MS', sans-serif;
   color: #194b6b;
   font-size: 15px;
   text-align: center;
@@ -386,6 +432,13 @@ main {
   grid-template-rows: min-content;
   grid-area: "title, title";
   color: #0e0e55; }
+
+.card-img-top {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
 
 .container-index {
   display: grid;
@@ -816,3 +869,16 @@ fieldset legend {
     transition: all 2s; }
     .section-card:hover img {
       align-content: flex-end; } }
+
+.card {
+  background-color: #fbfbff00;
+  border-color: rgba(0, 0, 0, 0); }
+  .card .card-circular {
+    background-color: #fbfbff00;
+    border-color: #194c6b00; }
+    .card .card-circular .card-img-top {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }

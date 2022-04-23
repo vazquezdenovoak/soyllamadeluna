@@ -468,6 +468,7 @@ fieldset legend{
     filter: opacity(35%);
     -webkit-filter: opacity(35%);
 }
+
 /*footer de paginas*/
 footer{
    width: 100vw;
@@ -571,7 +572,7 @@ footer ul li img {
     -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .galeria-listing:hover .galeria-title {
-    opacity: 0.5;  sdqws
+    opacity: 1;
   }
 .galeria-listing:hover .galeria-image img {
     filter: blur(2px);

@@ -1,5 +1,41 @@
+@import "variables";
+
+/*mixin*/
 @mixin card-prueba {
     width: 250px;
-    height: 250px * 2;
+    height: 250px ;
+    outline: 2px solid $pink-color;
+}
+@mixin card-title-prueba {
+   text-align: center;
+   background-color: blanchedalmond;
+   color: $white-color; 
+}
+@mixin card-img-prueba {
+  padding: 10px;   
+}
+@mixin card-content-prueba {
+    width: 30px;
+    height: 10px;
+    outline: 1px solid $pink-color;   
+}
+@mixin card-btn-prueba {
+    display: block;
+    width: 150px;
+    height: 30px;
+    outline: 1px solid $white-color;
+    color:rgb(223, 203, 213);
+    border-radius:15px;
 
+}
+//bucles//
+$btn: ("pink":$pink-color, "beige":$white-color, "black":$black-color);
+@each $name, $items in $btn {
+    /*btn*/
+    .btn-#{$name}{
+        @include card-btn-prueba();
+        background-color: $items;
+
+    }
+    
 }

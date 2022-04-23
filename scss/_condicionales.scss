@@ -1,0 +1,12 @@
+$ancho: 15px;
+@if($ancho == 15px){
+    .condicional{
+        color:pink;
+    } 
+}
+@else if(){
+    .condicional{
+        color:rgb(194, 133, 173);
+    }
+
+}
