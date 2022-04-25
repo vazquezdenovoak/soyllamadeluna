@@ -18,8 +18,24 @@
 	box-sizing: border-box;
 }
 
+.img-thumbnail{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-style: solid;
+	border-width: 7px;
+	border-style:none;
+	border-width: 1px;
+	transition: all 2s;
+	-webkit-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
+
+}
+
 body {
 	overflow-x: hidden;
+	background-color: rgba(255, 182, 227, 0.877);
 
 	section {
 		.header-nos {
@@ -39,10 +55,11 @@ header {
 		align-items: center;
 		justify-content: center;
 		column-gap: 20px;
-		color: rgba(3, 0, 8, 0.63);
+		
 		position: sticky;
 		top: 0;
 		z-index: 100;
+		background-image:url("/imagenes/nav-back.png");
 
 		ul {
 			li {
