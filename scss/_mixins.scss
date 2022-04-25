@@ -56,3 +56,9 @@ $colors: map-merge(
     ),
     $colors
 );
+div {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: 1rem;
+    color: white;
+  }

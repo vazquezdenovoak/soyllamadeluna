@@ -64,5 +64,6 @@
         "VELAS",
         "volvemos",
         "Widht"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/index.html"
 }
