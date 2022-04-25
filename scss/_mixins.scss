@@ -39,3 +39,20 @@ $btn: ("pink":$pink-color, "beige":$white-color, "black":$black-color);
     }
     
 }
+
+//maps//
+
+$blue: #B5E6F5;
+$red: #FFB2AD;
+$yellow: #ADC9EA;
+$green: #D8F0D4;
+
+$colors: map-merge(
+    (
+      “info: $blue,
+      “danger”: $red,
+      “warning”: $yellow,
+      “success: $green,
+    ),
+    $colors
+);
