@@ -1,0 +1,52 @@
+.galeria-image {
+	width: 100%;
+	height: auto;
+	line-height: 0;
+	overflow: hidden;
+
+	img {
+		filter: blur(0px);
+		transition: filter 0.3s ease-in;
+		transform: scale(1.1);
+	}
+}
+.galeriatitulo {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.galeria-listing {
+	position: relative;
+	top: auto;
+	&:hover {
+		.galeria-title {
+			opacity: 1;
+		}
+		.galeria-image {
+			img {
+				filter: blur(2px);
+				-webkit-filter: blur(2px);
+			}
+		}
+	}
+}
+.galeria-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .5s;
+	background: rgba(90, 0, 10, 0.4);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

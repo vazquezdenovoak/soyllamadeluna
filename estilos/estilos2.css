@@ -429,9 +429,6 @@ padding:0
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
   }
-.btnvermas{
-    background-color: rgb(231, 154, 231);
-}
 section h3 {
     padding-top: 50px;
     text-align: center;
@@ -455,7 +452,6 @@ fieldset legend{
     font-style: italic;
     font-display:calc(10xp 5xp 100%); 
 }
-
 .container-fluid{
     text-align:center; 
     margin: auto;
@@ -468,6 +464,12 @@ fieldset legend{
     filter: opacity(35%);
     -webkit-filter: opacity(35%);
 }
+video {
+    padding: 50px;
+    margin: 50px;
+    max-width: 60w;
+    max-height: 100vw;
+   }
 
 /*footer de paginas*/
 footer{
@@ -586,9 +588,9 @@ footer ul li img {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  text-transform: uppercase;
   font-weight: 800;
   border-radius: 10px;
+  background-color: rgb(231, 154, 231);
 
 }
   /* otras vistas */

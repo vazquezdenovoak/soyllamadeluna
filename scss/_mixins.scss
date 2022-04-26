@@ -49,10 +49,10 @@ $green: #D8F0D4;
 
 $colors: map-merge(
     (
-      “info: $blue,
-      “danger”: $red,
-      “warning”: $yellow,
-      “success: $green,
+      "info": $blue,
+      "danger": $red,
+      "warning": $yellow,
+      "success": $green,
     ),
     $colors
 );

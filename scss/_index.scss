@@ -1,1 +1,130 @@
 
+ .titulo{
+    animation-direction:normal;
+    --animate-duration: 2s;
+    animation-duration: 3s;
+    animation-name:initial;
+}
+.header-image{
+    animation-direction:normal;
+    --animate-duration: 2s;
+  }
+.titulo1{
+    color: hsl(204, 62%, 26%);
+    text-shadow: 4px 4px 3px #77f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align:center;
+    width: 100%; 
+    text-justify: newspaper;
+    font-weight:bold;
+}
+.titulo2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: hsl(204, 62%, 26%);
+    text-shadow: 4px 4px 3px #77f;
+    font-size: 20px;
+    text-align:center;
+    width: 100%; 
+    text-justify: newspaper;
+    font-weight:bold;
+}
+.logo img{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: auto;
+    padding-bottom: 25px; 
+    font-weight:bold;
+}
+main{
+    width: 100vw;
+    height: 100vw; 
+    margin: auto;
+    display: grid;
+    grid-template-rows:repeat(1fr,1fr) ;
+    grid-template-columns: repeat(1fr,1fr);
+}
+.titulo_Seccion{
+    margin-top: 30px;
+    padding: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT'," Calibri ", 'Trebuchet MS', sans-serif;
+    color: hsl(204, 62%, 26%);    
+    font-size: 15px;
+    text-align:center;
+    width: 100%; 
+    text-justify: newspaper;
+    font-weight:bold;
+    background-color: #cf32ba3a;
+}
+
+.section-card_title{
+    display: grid;
+    grid-template-rows: min-content;    
+    grid-area: "title, title";  
+    color: rgba(14, 14, 85, 55%);  
+        
+}
+
+
+.container-index{
+  display: grid;
+  width: 750px;
+  height: 600px;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "header header header"
+      "content-1 content-2  content-3"
+      " content-4 content-5 content-6"
+      "footer footer footer";
+}      
+.section-card_text p {
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+
+} 
+ .section-card_image img{
+        width: 50vw;
+        border-radius: 50%;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr 100px;
+        grid-gap: 1rem;
+        grid-template-areas:           
+            "content-1, content-1"
+            "content-2, content-3";
+        border-style:solid;
+        border-width: 7px;
+        border-color: rgba(62, 199, 199, 0.432);
+        filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
+        border-style: solid;
+        border-width: 1px;
+        transition: all 2s;
+        -webkit-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
+}
+.content-1 {
+    grid-area: "content-1";
+  }
+  .content-2 {
+    grid-area: "content-2";
+  }
+  .content-3 {
+    grid-area: "content-3";
+  }
+  .content-4 {
+    grid-area: "content-4";
+  }
+  .content-5 {
+    grid-area: "content-5";
+  }
+  .content-6 {
+    grid-area: "content-6";
+  }
+ 
+ //boton productos e index//
+.btnvermas {
+	background-color: rgb(224, 98, 224);
+}

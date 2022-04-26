@@ -1,0 +1,41 @@
+.header-nos {
+	padding-top: 50px;
+	background-image: url("../imagenes/backgroundHeader.jpg");
+	background-size: cover;
+	background-position-x: center;
+	text-align: center;
+}
+section.header-nos {
+	p {
+		margin: 20px;
+		text-align: justify;
+		font-size: medium;
+	}
+}
+#logo_nosotros {
+	width: 50vw;
+	padding-bottom: 20px;
+	filter: opacity(65%);
+    section {
+        iframe {
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: 80vw;
+            height: 50vh;
+        h3 {
+            padding-top: 50px;
+            text-align: center;
+            font-size: x-large;
+            margin: auto;
+            margin-bottom: 50px;
+         p {
+            font-family: 'Hurricane', cursive;
+            text-align: center;
+            font-size: medium;
+            margin: 50px;
+         }
+       }
+     }  
+  } 
+}    
