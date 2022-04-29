@@ -6,7 +6,7 @@
 @import "index";
 @import "talleres";
 @import "variables";
-@import "animaciones";
+
 
 * {
 	margin: 0;
@@ -24,20 +24,17 @@
 		border-style:none;
 		border-width: 1px;
 		transition: all 2s;
-		-webkit-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
+		filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
 		&:hover {
 			width: 110px;
-			height: 110px;
-			
-}
-		
-		
+			height: 110px;		
+}	
 	}
 	.card-body{
 		background-color: #5ed9f2a2;
 		border-width: 1px;
 		transition: all 2s;
-		-webkit-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
+		filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
 	}
 }
 body {
@@ -54,40 +51,36 @@ body {
 	}
 }
 header {
-// 	   nav {
-// 		height: 100vw;
-// 		// width: 100vw;
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: center;
-// 		column-gap: 20px;
-// 		position: sticky;
-// 		top: 0;
-// 		z-index: 100;
-		
-// 		background: size 100vw;
-// 		ul {
-// 			display: flex;
-// 			justify-content: space-evenly;
-// 			column-gap: 20px;
-// 			margin-right: 20px;
-// 			li {
-// 				list-style-type: none;
-// 				&:hover {
-// 					background-color: #2b649659;
-// 				    a {
-// 					  text-decoration: none;
-// 				    }
-// 				}
-// 			}		
-// 		}
-// 	}
-// }
-// #iconNavbar {
-// 	display: flex;
-	
-}
-
+	 nav {
+	height: 100vw;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: size 100vw;
+ 		ul {
+ 			display: flex;
+ 			justify-content: space-evenly;
+			column-gap: 20px;
+	        margin-right: 20px;
+    	li {
+ 				list-style-type: none;
+				&:hover {
+ 					background-color: #2b649659;
+ 				    a {
+						 text-decoration: none;
+ 				    }
+ 				}
+ 			}		
+		}
+ 	}
+ }
+ #iconNavbar {
+	display: flex;
 // menu {
 // 	font-family: 'Caveat', cursive;
 // 	padding: 15px;
@@ -107,7 +100,6 @@ a {
 	&:any-link {
 		border: none;
 	}
-
 	&:-webkit-any-link {
 		border: none;
 	}
@@ -198,19 +190,7 @@ main {
 		-ms-border-radius: 50%;
 		-o-border-radius: 50%;
 }
-.container-index {
-	display: grid;
-	width: 750px;
-	height: 600px;
-	// grid-template-columns: 200px 1fr 1fr;
-	// grid-template-rows: 80px 1fr 1fr 100px;
-	// grid-gap: 1rem;
-	// grid-template-areas: 
-	// "header header header" 
-	// "content-1 content-2 content-3" 
-	// "content-4 content-5 content-6"
-	// "footer footer footer";
-}
+
 // .section-card_text {
 // 	p {
 // 		text-overflow: ellipsis;
@@ -243,39 +223,14 @@ main {
 // 		}
 // 	}
 //}
-// .content-1 {
-// 	grid-area: "content-1";
-// }
-// .content-2 {
-// 	grid-area: "content-2";
-// }
-// .content-3 {
-// 	grid-area: "content-3";
-// }
-// .content-4 {
-// 	grid-area: "content-4";
-// }
-// .content-5 {
-// 	grid-area: "content-5";
-// }
-// .content-6 {
-// 	grid-area: "content-6";
-// }
-p .subrayadoaroma{
-	text-decoration:underline;
-	text-decoration-line: underline;
-    text-decoration-style: wavy;
-	text-decoration-color: #684beb;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(100, 41, 236);
-}
+
 footer {
 	width: 100vw;
 	margin-top: 100px;
 	background-color: rgba(210, 71, 146, 60%);
 	background-size: cover;
 	color: rgba(3, 0, 8, 0.63);
+
 	.container {
 		display: grid;
 		grid-area: "footer";
@@ -468,54 +423,7 @@ section {
 	    }
     } 
 }
-.container {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: 3fr 1.1fr 1fr;
-	grid-template-rows: 0.8fr 0.9fr 1.3fr;
-	grid-auto-columns: 10fr 10fr;
-	gap: 0px 0px;
-	grid-auto-flow: row dense;
-	justify-content: space-evenly;
-	grid-template-areas: 
-	"chocolate pochoclos"
-	"cookies cafe"
-	"cookies sandiaymelon"
-	"chocolate milflores"
-	"chocolate cookies";
-	width: 73%;
-	height: 73%;
-	margin: 0;
-	padding: 0;
-}
-.pochoclos {
-	grid-area: pochoclos;
-}
-.sandiaymelon {
-	grid-area: sandiaymelon;
-}
-.cookies {
-	grid-area: cookies;
-}
-.chocolate {
-	grid-area: chocolate;
-}
-.cookies1 {
-	grid-area: cookies1;
-}
-.cafe {
-	grid-area: cafe;
-}
-.milflores1 {
-	grid-area: milflores1;
-}
-.milflores {
-	grid-area: milflores;
-}
-.chocolate1 {
-	grid-area: chocolate1;
-}
+
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -611,6 +519,11 @@ fieldset {
 	align-items: center;
 	justify-content: center;
 }
+
+a:link { color: rgb(63, 63, 235); }          /* Enlaces no visitados */
+a:visited { color: rgb(158, 9, 158); }     /* Enlaces visitados */
+a:hover { background: rgb(240, 240, 123); }  /* El usuario esta sobre el enlace */
+a:active { color: rgb(40, 129, 40); } 
 @media (hover: none) {
 	 .galeria-title {
 		       opacity: 1;
@@ -708,6 +621,7 @@ fieldset {
 			}
 		}
 	}
+}
     // .card{
 	//      background-color: #fbfbff00;
 	//      border-color: rgba(0, 0, 0, 0);
@@ -724,4 +638,5 @@ fieldset {
 	// 	}
 
 	// }
+	}
 }
