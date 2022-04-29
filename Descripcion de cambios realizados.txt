@@ -1,6 +1,6 @@
 cambios :
 
-galeria sass se uso Extend
+ galeria sass se uso Extend
  contacto de sass se uso mixin
  Index se agrega  map y map get
 
@@ -14,3 +14,4 @@ galeria sass se uso Extend
 ♦ Agregue en las imagenes del sitio que faltaba descripcion con un atributo alt
 ♦ Se agrego favicon de logos y se optimizaron imagenes
 ♦ Se ordenaron los titulos los p y los h en todas las paginas
+♦ Se agrego ubicación de la página actual dentro de una jerarquía (marcado de paginas atajos para volver a inicio)

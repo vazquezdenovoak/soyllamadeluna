@@ -73,10 +73,10 @@ a:-webkit-any-link {
   border-radius: 5px;
   border: none;
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-  background: #ff0a78;
+  background: #f554da;
 }
 .button-shadowrose:hover {
-  background-color: #ff6392;
+  background-color: #f554da;
 }
 .button-shadowrose:active {
   top: 2px;
@@ -88,7 +88,6 @@ a:-webkit-any-link {
     display: flex;
     align-items: center;
     justify-content:flex-start;
-    background-color: rgb(209, 181, 236);
     background-image: url("../imagenes/backgroundHeader.jpg");
     background-size:cover;
     background-position-x: center;
@@ -98,7 +97,7 @@ a:-webkit-any-link {
     -ms-transition:0.7s;
     -o-transition:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/*texto de header y animaciones + INDEX*/
+/*texto de header y animaciones + producto*/
 .titulo{
     animation-direction:normal;
     --animate-duration: 2s;
@@ -109,6 +108,7 @@ a:-webkit-any-link {
     animation-direction:normal;
     --animate-duration: 2s;
   }
+
 .titulo1{
     color: hsl(204, 62%, 26%);
     text-shadow: 4px 4px 3px #77f;
@@ -158,6 +158,17 @@ main{
     background-color: #cf32ba3a;
 }
 
+ p .subrayadoaroma {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color:  #684beb;
+	-moz-text-decoration-line: underline;
+	-moz-text-decoration-style: wavy;
+	-moz-text-decoration-color: #684beb;
+ -webkit-text-decoration-line: underline;
+ -webkit-text-decoration-style: wavy;
+ -webkit-text-decoration-color: rgb(100, 41, 236);
+}
 .section-card_title{
     display: grid;
     grid-template-rows: min-content;    
@@ -357,6 +368,11 @@ section iframe{
     width: 80vw;
     height: 50vh;
 }
+/*palabras resaltadas de texto nosotros*/
+span .resaltar{ 
+    font-weight: bold; 
+    font-style: italic;
+  }
 /*---VIDEOS--*/
 .containervideo{
     background-color: #6a040f;
@@ -475,7 +491,7 @@ video {
 footer{
    width: 100vw;
    margin-top: 100px;
-   background-color: rgb(133, 91, 248);
+   background-color: rgb(210 71 146 / 60%);
    background-size:cover;
    color: rgba(3, 0, 8, 0.63);        
 }
