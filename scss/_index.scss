@@ -58,15 +58,6 @@ main{
     background-color: #cf32ba3a;
 }
 
-.section-card_title{
-    display: grid;
-    grid-template-rows: min-content;    
-    grid-area: "title, title";  
-    color: rgba(14, 14, 85, 55%);  
-        
-}
-
-
 .container-index{
   display: grid;
   width: 750px;
@@ -80,31 +71,9 @@ main{
       " content-4 content-5 content-6"
       "footer footer footer";
 }      
-.section-card_text p {
-    
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap; 
 
-} 
- .section-card_image img{
-        width: 50vw;
-        border-radius: 50%;
-        grid-template-columns: 200px 1fr 1fr;
-        grid-template-rows: 80px 1fr 1fr 100px;
-        grid-gap: 1rem;
-        grid-template-areas:           
-            "content-1, content-1"
-            "content-2, content-3";
-        border-style:solid;
-        border-width: 7px;
-        border-color: rgba(62, 199, 199, 0.432);
-        filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
-        border-style: solid;
-        border-width: 1px;
-        transition: all 2s;
-        -webkit-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.637));
-}
+
+  
 .content-1 {
     grid-area: "content-1";
   }
@@ -126,5 +95,5 @@ main{
  
  //boton productos e index//
 .btnvermas {
-	background-color: rgb(224, 98, 224);
+	background-color: rgba(224, 98, 224, 0.719);
 }
