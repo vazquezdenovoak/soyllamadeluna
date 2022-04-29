@@ -349,18 +349,6 @@ main {
   color: #0e0e55;
 }
 
-.container-index {
-  display: -ms-grid;
-  display: grid;
-  width: 750px;
-  height: 600px;
-  -ms-grid-columns: 200px 1fr 1fr;
-      grid-template-columns: 200px 1fr 1fr;
-  -ms-grid-rows: 80px 1fr 1fr 100px;
-      grid-template-rows: 80px 1fr 1fr 100px;
-  grid-gap: 1rem;
-      grid-template-areas: "header header header" "content-1 content-2  content-3" " content-4 content-5 content-6" "footer footer footer";
-}
 
 .section-card_text p {
   text-overflow: ellipsis;
@@ -376,7 +364,8 @@ main {
   -ms-grid-rows: 80px 1fr 1fr 100px;
       grid-template-rows: 80px 1fr 1fr 100px;
   grid-gap: 1rem;
-      grid-template-areas: "content-1, content-1" "content-2, content-3";
+      grid-template-areas: "content-1, content-1"
+ "content-2, content-3";
   border-style: solid;
   border-width: 7px;
   border-color: rgba(62, 199, 199, 0.432);
@@ -946,7 +935,11 @@ section iframe h3 p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-      grid-template-areas: "chocolate pochoclos" "cookies cafe" "cookies sandiaymelon" "chocolate milflores" "chocolate cookies";
+      grid-template-areas: "chocolate pochoclos"
+ "cookies cafe"
+ "cookies sandiaymelon"
+ "chocolate milflores"
+ "chocolate cookies";
   width: 73%;
   height: 73%;
   margin: 0;
@@ -1170,7 +1163,9 @@ fieldset legend {
         grid-template-columns: 1fr;
     -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
   }
 }
 
@@ -1188,10 +1183,14 @@ fieldset legend {
         grid-template-columns: 1fr;
     -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
-        grid-template-areas: "header" "main" "footer";
+        grid-template-areas: "header"
+ "main"
+ "footer";
   }
   form {
     width: 100%;
