@@ -1,79 +1,44 @@
 
-@keyframes slidein {
-	from {
-		margin-left: 100%;
-		width: 200%;
-	}
-
-	to {
-		margin-left: 0%;
-		width: 100%;
-	}
-
-	75% {
-		font-size: 200%;
-		margin-left: 25%;
-		width: 150%;
-	}
-}
-
-@keyframes slidein {
-	from {
-		margin-left: 100%;
-		width: 200%;
-	}
-
-	to {
-		margin-left: 0%;
-		width: 100%;
-	}
-
-	75% {
-		font-size: 200%;
-		margin-left: 25%;
-		width: 150%;
-	}
-}
 
 
- body {
-   background-color: #1a1a1a;
-   color: #fefefe;
-   font-family: 'Ubuntu';
-   text-transform: uppercase;
-   letter-spacing: 0.2em;
-   font-size: 1.3em;
-   line-height: 2;
-   font-weight: 300;
-   text-rendering: optimizeLegibility;
-   text-align: center;
- }
+//  body {
+//    background-color: #1a1a1a;
+//    color: #fefefe;
+//    font-family: 'Ubuntu';
+//    text-transform: uppercase;
+//    letter-spacing: 0.2em;
+//    font-size: 1.3em;
+//    line-height: 2;
+//    font-weight: 300;
+//    text-rendering: optimizeLegibility;
+//    text-align: center;
+//  }
  
- .containernombre{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 100%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
-   -moz-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   -o-transform: translate(-50%, -50%);
-}
+//  .containernombre{
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    width: 100%;
+//    transform: translate(-50%, -50%);
+//    -webkit-transform: translate(-50%, -50%);
+//    -moz-transform: translate(-50%, -50%);
+//    -ms-transform: translate(-50%, -50%);
+//    -o-transform: translate(-50%, -50%);
+// }
  
- .txtnav{
-   display: block;
- }
+//  .txtnav{
+//    display: block;
+//  }
  
- a { 
-   text-decoration: none;
-   position: absolute;
-   bottom: 10px;
-   right: 10px;
-   text-align: right;
-   color: #eee;
-   font-size: 15px;
-   line-height: 15px;
- }
+//  a { 
+//    text-decoration: none;
+//    position: absolute;
+//    bottom: 10px;
+//    right: 10px;
+//    text-align: right;
+//    color: #eee;
+//    font-size: 15px;
+//    line-height: 15px;
+//  }
  
- @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+//  @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);

@@ -1,51 +1,51 @@
-fieldset legend{
-    padding: 20px;
-    font-size:xx-large;
-    font-family:Arial, 'Helvetica', sans-serif ;
-    font-style: italic;
-    font-display:calc(10xp 5xp 100%); 
-}
-.container-fluid{
-    text-align:center; 
-    margin: auto;
-}
-#logo_talleres{    
-    position:absolute; 
-    display: flex;
-   flex-direction: row-reverse;
-    width: 50vw;
-    filter: opacity(35%);
-    -webkit-filter: opacity(35%);
-}
-.containervideo {
-	background-color: #6a040f;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-content: space-around;
-	width: 100%;
+// fieldset legend{
+//     padding: 20px;
+//     font-size:xx-large;
+//     font-family:Arial, 'Helvetica', sans-serif ;
+//     font-style: italic;
+//     font-display:calc(10xp 5xp 100%); 
+// }
+// .container-fluid{
+//     text-align:center; 
+//     margin: auto;
+// }
+// #logo_talleres{    
+//     position:absolute; 
+//     display: flex;
+//    flex-direction: row-reverse;
+//     width: 50vw;
+//     filter: opacity(35%);
+//     -webkit-filter: opacity(35%);
+// }
+// .containervideo {
+// 	background-color: #6a040f;
+// 	margin: 0;
+// 	padding: 0;
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: space-evenly;
+// 	align-content: space-around;
+// 	width: 100%;
 
-	iframe {
-		margin-right: 2rem;
-		margin-top: 1rem;
-		height: 300px;
-		width: 300px;
-		box-shadow: 5px 5px 1px 2px #60d6ee;
-	}
+// 	iframe {
+// 		margin-right: 2rem;
+// 		margin-top: 1rem;
+// 		height: 300px;
+// 		width: 300px;
+// 		box-shadow: 5px 5px 1px 2px #60d6ee;
+// 	}
 
-	h2 {
-		font-family: 'Permanent Marker', cursive;
-		color: #b7094c;
-		font-size: 34px;
-		height: 8rem;
-		margin-top: 2rem;
-	}
-}
+// 	h2 {
+// 		font-family: 'Permanent Marker', cursive;
+// 		color: #b7094c;
+// 		font-size: 34px;
+// 		height: 8rem;
+// 		margin-top: 2rem;
+// 	}
+// }
 
-video .videomp4 {
+// video .videomp4 {
 	    
-		width: 80vw;
-		height: 50vh;
-}
+// 		width: 80vw;
+// 		height: 50vh;
+// }

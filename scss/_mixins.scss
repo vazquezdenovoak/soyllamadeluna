@@ -1,0 +1,9 @@
+
+
+ @mixin color-invertido{
+    background-color:#ff80ff;  
+    color:#8080c0;
+}
+// Usage
+blockquote{
+@include color-invertido;}
