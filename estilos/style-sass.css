@@ -124,12 +124,6 @@ form {
   font-size: 30px;
   margin-bottom: 20px; }
 
-form label {
-  margin: 5px;
-  width: 70%;
-  text-align: center;
-  align-content: center; }
-
 form fieldset {
   padding: 20px;
   margin-bottom: 30px;
@@ -155,6 +149,10 @@ input, textarea {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px; }
+  input textarea, textarea textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
 
 input:-webkit-autofill {
   border: 3px solid blue; }
@@ -162,13 +160,8 @@ input:-webkit-autofill {
 input:autofill {
   border: 3px solid blue; }
 
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%; }
-
 #boton {
-  background: #b7094c;
+  background: #e64d87;
   color: beige;
   padding: 20px;
   text-align: center; }
