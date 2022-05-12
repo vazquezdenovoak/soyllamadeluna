@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
    <!-- segundo links de hojas estilos css-->
-   <link rel="stylesheet" href="../estilo/style.css">
+   <link rel="stylesheet" href="../estilos/style-sass.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
@@ -62,77 +62,134 @@
 					  </ul>
 					</li>
 				  </ul>
-				  <form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				  </form>
 				</div>
 			  </div>
 			</div>
 		  </nav><!-- cierre logo + nav -->
 	</header> 
+
+	<div class="row g-0 bg-gradient position-relative shadow mt-5  px-3">
+		<div class="col-md-6 mb-md-0 p-md-4">
+			<img src="../imagenes/logo.png" class="w-50 p-3" alt="...">
+		</div>			
+		<div class="col-md-6 p-4 ps-md-0">
+			<h3 class="mt-0 fw-bold">Nosotros</h3>
+			<p class="lead"> Buscamos el detalle que nos dice mucho sobre cada persona y la historia que desea
+				contar. Un aroma, un color, un objeto, que apenas se vislumbra en el espacio y transmite su estilo 
+				personal. Encontrar esos elementos, nos inspira. Diseñarlos, nos transporta. Crearlos y lograr que 
+				en ellos, la otra persona se sienta reflejada, nos emociona. Para nosotros la belleza de cada esencia, 
+				está en el aire.😊
+			 </p>
+		</div>	
+	  </div>
+
+	  <div class="row g-0 bg-gradient position-relative mt-3 shadow">
+		<div class="col-md-6 mb-md-0 p-md-4 ">
+		  <img src="../imagenes/nosotros.jpg" class="w-100 p-3 img-fluid" alt="logo">
+		</div>
+		<div class="col-md-6 p-4 ps-md-0">
+		  <h3 class="mt-0">Taller de velas decoradas</h3>
+		  <p class="lead"> El 95% de la producción mundial de velas aromáticas se fabrican con base de parafina, un producto
+		   derivado del petróleo. Únicamente, el 5% restante de fabricantes de velas son 100% naturales y se fabrican con componentes
+		    sostenibles y ecológicos como la cera de soja que utiliza Aromas de Andalucía en sus velas de 250g y 150g.
+			ul>
+			  Es un <span class="cambioletra">material derivado de plantas </span>, una fuente <span class="cambioletra"> renovable y biodegradable </span> creando así un producto sostenible.   
+			  Su combustión no supone ningún riesgo para la salud, ni aumenta los niveles de toxicidad del ambiente ya que no aumenta los niveles de CO2, <span> ni produce hollín </span>.   
+			  Las mechas empleadas están elaboradas con filamentos de <span class="cambioletra"> algodón 100% naturales</span>.   
+		 </ul>
+		   <h5>Las velas de cera de soja:</h5>
+		 <ul>
+		     Se consumen <span class="cambioletra"> más lentamente que las elaboradas con parafina, aguantando 2 o 3 veces más que estas</span>. <span class="cambioletra"> Son mucho más rentables </span>.   
+		     Producen una <span class="cambioletra"> mayor luminosidad</span>, alumbrando con una llama viva y fuerte pero <span> sin peligros</span>.   
+		     El humo resultante de la cera de soja <span class="cambioletra"> no afecta ni estropea los muebles </span> ni las pintas de las paredes que rodean la vela.   
+		   <h4> <span class="cambioletra">¿Por qué no usar velas con parafina?</span></h4>
+		     Las <span class="cambioletra">velas con parafina emiten vapores y gases dañinos</span>  para la salud durante su combustión.   
+		     Aumentan los niveles de CO2.   
+		     <span class="cambioletra">Emiten hollín negro desaconsejado para inhalar</span>.   
+		     Las mechas utilizadas en estas velas no son naturales y se elabora con componentes químicos que se unen al humo perjudicial que desprenden.   
+		     Utilizan <span class="cambioletra"> fragancias sintéticas menos beneficios para la salud</span>.   
+		     La <span class="cambioletra">parafina proviene del petróleo</span>, fuente limitada y no renovable.   
+		 </ul>
+		
+		</p>
+		</div>
+	  </div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<section class="header-nos"><!-- fila de información de mi sitio -->
-		<h3 class= "titulo3" >Nosotros</h3>
+		<h3 class= "tituloproductos" >Nosotros</h3>
 		<p> Buscamos el detalle que nos dice mucho sobre cada persona y la historia que desea contar. Un aroma, un color, un objeto, que apenas se vislumbra en el espacio y transmite su estilo personal. Encontrar esos elementos, nos inspira. Diseñarlos, nos transporta. Crearlos y lograr que en ellos, la otra persona se sienta reflejada, nos emociona. Para nosotros la belleza de cada esencia, está en el aire.</p>
 		<img id="logo_nosotros" src="../imagenes/logo.png" alt="LOGO">
      <div>
-			 <h1 class="titulo3"> Velas naturales 100% soja </h1>
+			 <h1 class="tituloproductos"> Velas naturales 100% soja </h1>
 	
         <ul>
-           <li>El 95% de la producción mundial de velas aromáticas se fabrican con base de parafina, un producto derivado del petróleo.</li>
-           <li>Únicamente, el 5% restante de fabricantes de velas son 100% naturales y se fabrican con componentes sostenibles y ecológicos como la cera de soja que utiliza Aromas de Andalucía en sus velas de 250g y 150g.</li>
+           
         </ul>
-	      <p> <span class="cambioletra">Ventajas de la cera de soja <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-heart" viewbox="0 0 16 16" >
-			<path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-		  </svg></span></p>
+	      <p>
+			
+	       </p>
         <ul>
-	       <li>Es un <span class="cambioletra">material derivado de plantas </span>, una fuente <span class="cambioletra"> renovable y biodegradable </span> creando así un producto sostenible.</li>
-           <li>Su combustión no supone ningún riesgo para la salud, ni aumenta los niveles de toxicidad del ambiente ya que no aumenta los niveles de CO2, <span> ni produce hollín </span>.</li>
-           <li>Las mechas empleadas están elaboradas con filamentos de <span class="cambioletra"> algodón 100% naturales</span>.</li>
+	         Es un <span class="cambioletra">material derivado de plantas </span>, una fuente <span class="cambioletra"> renovable y biodegradable </span> creando así un producto sostenible.   
+             Su combustión no supone ningún riesgo para la salud, ni aumenta los niveles de toxicidad del ambiente ya que no aumenta los niveles de CO2, <span> ni produce hollín </span>.   
+             Las mechas empleadas están elaboradas con filamentos de <span class="cambioletra"> algodón 100% naturales</span>.   
         </ul>
-		
           <h5>Las velas de cera de soja:</h5>
         <ul>
-          <li>Se consumen <span class="cambioletra"> más lentamente que las elaboradas con parafina, aguantando 2 o 3 veces más que estas</span>. <span class="cambioletra"> Son mucho más rentables </span>.</li>
-          <li>Producen una <span class="cambioletra"> mayor luminosidad</span>, alumbrando con una llama viva y fuerte pero <span> sin peligros</span>.</li>
-          <li>El humo resultante de la cera de soja <span class="cambioletra"> no afecta ni estropea los muebles </span> ni las pintas de las paredes que rodean la vela.</li>
+            Se consumen <span class="cambioletra"> más lentamente que las elaboradas con parafina, aguantando 2 o 3 veces más que estas</span>. <span class="cambioletra"> Son mucho más rentables </span>.   
+            Producen una <span class="cambioletra"> mayor luminosidad</span>, alumbrando con una llama viva y fuerte pero <span> sin peligros</span>.   
+            El humo resultante de la cera de soja <span class="cambioletra"> no afecta ni estropea los muebles </span> ni las pintas de las paredes que rodean la vela.   
           <h4> <span class="cambioletra">¿Por qué no usar velas con parafina?</span></h4>
-          <li>Las <span class="cambioletra">velas con parafina emiten vapores y gases dañinos</span>  para la salud durante su combustión.</li>
-          <li>Aumentan los niveles de CO2.</li>
-          <li><span class="cambioletra">Emiten hollín negro desaconsejado para inhalar</span>.</li>
-          <li>Las mechas utilizadas en estas velas no son naturales y se elabora con componentes químicos que se unen al humo perjudicial que desprenden.</li>
-          <li>Utilizan <span class="cambioletra"> fragancias sintéticas menos beneficios para la salud</span>.</li>
-          <li>La <span class="cambioletra">parafina proviene del petróleo</span>, fuente limitada y no renovable.</li>
+            Las <span class="cambioletra">velas con parafina emiten vapores y gases dañinos</span>  para la salud durante su combustión.   
+            Aumentan los niveles de CO2.   
+            <span class="cambioletra">Emiten hollín negro desaconsejado para inhalar</span>.   
+            Las mechas utilizadas en estas velas no son naturales y se elabora con componentes químicos que se unen al humo perjudicial que desprenden.   
+            Utilizan <span class="cambioletra"> fragancias sintéticas menos beneficios para la salud</span>.   
+            La <span class="cambioletra">parafina proviene del petróleo</span>, fuente limitada y no renovable.   
         </ul>
 	</div>
-            <figure class="text-center">
-				<blockquote class="blockquote">
-				   <p>"El secreto del cambio es enforcar toda tu energia en construir algo nuevo. La fuerza y el poder esta dentro de tí, tomate tiempo, respira hondo, se constante a tu ritmo y tenete paciencia. Esto recién comienza.."</p>
-				 </blockquote>
-				 <figcaption class="blockquote-footer">
-					Coach certificada, <cite title="Source Title"> Karen Vazquez de Novoa</cite>
-				 </figcaption>
-			</figure>
-	</section>
-	<section>		
-		  	 <h3>Ubicación</h3>
-			 <p> Nos encontramos en Ciudad Autonoma de Buenos Aires, Argentina. </p> 
-			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7098ec53905%3A0xf4d137ec46ee3e53!2sSoy%20Llama%20de%20Luna!5e0!3m2!1ses!2sar!4v1646172077170!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-	</section>
-    <footer ><!-- inicio de footer --> 
-		<div class="redes">
-        <ul>
-			<li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
-			<li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
-		    <li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
-            <li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a></li>
-        </ul>
-	</div>
-		 <div class="copyright">
-            <img src="../imagenes/logo.png" alt="logo de la empresa" width="50 px" title="Logo de Soy Llama de Luna">
-            <p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa propiedad de Soy Llama de Luna</p>
-        </div>
-	</footer>
+     <figure class="text-center">
+		 <blockquote class="blockquote">
+			 <p>"El secreto del cambio es enforcar toda tu energia en construir algo nuevo. La fuerza y el poder esta dentro de tí, tomate tiempo, respira hondo, se constante a tu ritmo y tenete paciencia. Esto recién comienza.."</p>
+		 </blockquote>
+		 <figcaption class="blockquote-footer">
+		   Coach certificada, <cite title="Source Title"> Karen Vazquez de Novoa</cite>
+		 </figcaption>
+	 </figure>
+	<div>
+ 	   <h3>Ubicación</h3>
+	   <p> Nos encontramos en Ciudad Autonoma de Buenos Aires, Argentina. </p> 
+	   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26083836.754593752!2d-81.63270780954898!3d-37.05600320152319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7098ec53905%3A0xf4d137ec46ee3e53!2sSoy%20Llama%20de%20Luna!5e0!3m2!1ses!2sar!4v1646172077170!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+<footer><!-- inicio de footer --> 
+	<div class="redes">
+  <ul>
+		  <li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
+		  <li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
+		<li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
+	<li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a></li>
+  </ul>
+</div>
+<ul>
+	<li><p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa</p></li>
+</ul>   
+</footer>
+
+
+
 	<!--links bootstrap-->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
