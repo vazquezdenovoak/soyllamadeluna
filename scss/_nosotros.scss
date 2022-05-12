@@ -1,22 +1,23 @@
-.header-nos {
-	padding-top: 50px;
-	background-image: url("../imagenes/backgroundHeader.jpg");
-	background-size: cover;
-	background-position-x: center;
-	text-align: center;
-}
-section.header-nos {
-	p {
-		margin: 20px;
-		text-align: justify;
-		font-size: medium;
-	}
+section {
+  .header-nos {
+        	padding-top: 50px;
+        	background-image: url("../imagenes/backgroundHeader.jpg");
+        	background-size: cover;
+        	background-position-x: center;
+        	text-align: center;
+    	p {
+        		margin: 20px;
+	        	text-align: justify;
+	        	font-size: medium;
+      }
+  }
 }
 #logo_nosotros {
 	width: 50vw;
 	padding-bottom: 20px;
 	filter: opacity(65%);
-    section {
+}
+section {
         iframe {
             display: block;
             margin: auto;
@@ -37,5 +38,5 @@ section.header-nos {
          }
        }
      }  
-  } 
-}    
+} 
+   

@@ -13,16 +13,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 <!-- segundo links de hojas estilos css-->
-<link rel="stylesheet" href="../estilo/style.css">
+<link rel="stylesheet" href="../estilos/style-sass.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
 </head>
 <body> <!-- logo y todo lo que vemos en el navegador-->
   <header>
     <nav class="navbar navbar-light bg-light fixed-top">
 			<div class="container-fluid">
 				<a href="../index.html">
-					<img src="../imagenes/logo.png" alt="logo de la empresa" width="40 px" title="Soy Llama de Luna">
+					<img  src="../imagenes/logo.png"  alt="logo de la empresa" width="40 px" title="Soy Llama de Luna">
 				</a>
 			  <a class="navbar-brand" href="#">SOY LLAMA DE LUNA </a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -32,130 +31,202 @@
 				<div class="offcanvas-header">
 				  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
 				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-					<li class="nav-item">
-					  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-					</li>
-					 <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="../paginas/galeria.html">Galeria</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="../paginas/talleres.html">Talleres</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
-					  </li>
-					<li class="nav-item dropdown"> 
-					
-					  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-						<li><a class="dropdown-item" href="../index.html">Home</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li>
-						  <hr class="dropdown-divider">
-						</li>
-						<li><a class="dropdown-item" href="../paginas/talleres.html">Something else here</a></li>
-					  </ul>
-					</li>
-				  </ul>
-				  <form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				  </form>
-				</div>
-			  </div>
 			</div>
-		  </nav>
-      <div class="header-image">           
-           <div class="logo animate__animated animate__backInLeft">
-         <img class="logo" src="../imagenes/logo.png" alt="LOGO">
-           </div>                       
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					 <li class="nav-item">
+					    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+					 </li>
+					 <li class="nav-item">
+					  	<a class="nav-link active" aria-current="page" href="../paginas/galeria.html">Galeria</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="../paginas/talleres.html">Talleres</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+					  </li>
+        </ul>
+			</div>
+		</div>
+  </div>
+</nav>
+
+      <div class="header-nos pt-5">    
            <div class="titulo animate__animated animate__backInRight">
-               <h1 class="gradient">SOY LLAMA DE LUNA</h1>
-               <h3 class="gradient" > Encuentra tu esencia, enciende tu llama... </h3> 
+               <h5 class="titulo1 text-center"> Encuentra tu esencia, enciende tu llama... </h5> 
            </div> 
-    </div>
-	</header> <!-- cierre logo + nav -->
-           <!-- fila de información de mi sitio -->
+      </div>
+
+	</header> <!-- cierre logo + nav --> 
           <div>
-              <h1 class="titulo_Seccion"> Selecciona tu vela favorita y descubre cada aroma</h1>      
+              <h1 class="titulo_Seccion text-center fw-bolder"> Selecciona tu vela favorita y descubre cada aroma</h1>      
+          </div>
+      <div class="card-group">
+        <div class="card p-3 shadow m-2">
+              <img src="../imagenes/cajamilflores.png" class="card-img-top" alt=".">
+              <div class="card-body">
+                    <h5 class="card-title">Mil Flores</h5>
+                    <p class="card-text">Ayuda a contrarrestar el insomnio, agradable aroma, <span class="fw-bold">logra activar en el cuerpo la serotonina,</span> permite que podamos conciliar el sueño rápidamente, al momento de irnos a dormir. <span class="fw-bold">Es un poderoso calmante,</span> su aroma dulce que logra que nuestro cuerpo entre en un estado de relajación y calma. Es ideal para quienes sufren de estrés, ataques de ansiedad e inestabilidad emocional. Te ayuda a obtener <span class="fw-bold">una mejor conexión espiritual, es relajante</span>.</p>
+                    <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo1">LEER MÁS</button></a>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="dialogo1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Aroma</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="../imagenes/17.Carr.png">
+                      <p class="card-text">Aroma dulce, relajante, ayuda a conciliar el sueño rapidamente!</p>
+                    </div>              
+                  </div>
+                </div>
+              </div> 
+          </div>
+
+        <div class="card p-3 shadow m-2">
+            <img src="../imagenes/cajapochoclos.png" class="card-img-top" alt="Pochoclos">
+            <div class="card-body">
+                <h5 class="card-title">Pochoclos</h5>
+                <p class="card-text"><span class="fw-bold">Los perfumes acaramelados son aquellos que se elaboran con base de vainilla</span> y luego se combina con alguno otro aroma particular. Usualmente se los combina con aromas dulces como chocolate, cremas, entre otros. Informalmente se las clasifica como fragancias gourmand</p> 
+                <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo2">LEER MÁS</button></a>
+            </div>  
+        <!-- Modal -->
+            <div class="modal fade" id="dialogo2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Aroma</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid" src="../imagenes/15.Carr.png">
+                    <p class="card-text">Aroma acaramelado, especial para una tarde de series y peliculas!</p>
+                  </div>              
+                </div>
+              </div>
             </div>
-     <div class="card-group">
-      <div class="card">
-        <img src="../imagenes/cajamilflores.png" class="card-img-top" alt=".">
-        <div class="card-body">
-          <h5 class="card-title">Mil Flores</h5>
-          <p class="card-text">Ayuda a contrarrestar el insomnio, agradable aroma, logra activar en el cuerpo la serotonina, permite que podamos conciliar el sueño rápidamente, al momento de irnos a dormir. Es un poderoso calmante, su aroma dulce que logra que nuestro cuerpo entre en un estado de relajación y calma. Es ideal para quienes sufren de estrés, ataques de ansiedad e inestabilidad emocional. Te ayuda a obtener una mejor conexión espiritual, es relajante.</p>
-          <p class="card-text"><small class="text-muted">Aroma dulce, relajante, ayuda a conciliar el sueño rapidamente! </small></p>
-         <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
-        </div>
+           </div>
+
+        <div class="card p-3  shadow m-2">
+            <img src="../imagenes/cajaCookies.png" class="card-img-top" alt="Cookies">
+            <div class="card-body">
+                <h5 class="card-title">Cookies</h5>
+                <p class="card-text">Hay aromas que no se olvidan, dulces <span class="fw-bold">recuerdos que quedan grabados en el alma</span> y en el corazón. Uno de ellos es el olorcito a la comida de los abuelos. Para quienes no pueden dar con esas formulas y aromas que pueden hacer que se les piante un lagrimón entre bocado y bocado.</p>
+                <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo3">LEER MÁS</button></a>
+            </div>
+        <!-- Modal -->
+              <div class="modal fade" id="dialogo3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Aroma</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-fluid" src="../imagenes/04.Carr.png">
+                      <p class="card-text">Aroma avainillado, trae recuerdos de aquellos momentos unicos!</p>
+                    </div>              
+                  </div>
+                </div>
+               </div> 
+           </div>
       </div>
-      <div class="card">
-        <img src="../imagenes/cajapochoclos.png" class="card-img-top" alt="Pochoclos">
-        <div class="card-body">
-          <h5 class="card-title">Pochoclos</h5>
-          <p class="card-text">Los perfumes acaramelados son aquellos que se elaboran con base de vainilla y luego se combina con alguno otro aroma particular. Usualmente se los combina con aromas dulces como chocolate, cremas, entre otros. Informalmente se las clasifica como fragancias gourmand</p> 
-          <p class="card-text"><small class="text-muted">Aroma acaramelado, especial para una tarde de series y peliculas!</small></p>
-          <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../imagenes/cajaCookies.png" class="card-img-top" alt="Cookies">
-        <div class="card-body">
-          <h5 class="card-title">Cookies</h5>
-          <p class="card-text">Hay aromas que no se olvidan, dulces recuerdos que quedan grabados en el alma y en el corazón. Uno de ellos es el olorcito a la comida de los abuelos. Para quienes no pueden dar con esas formulas y aromas que pueden hacer que se les piante un lagrimón entre bocado y bocado.</p>
-          <p class="card-text"><small class="text-muted"> Aroma avainillado, trae recuerdos de aquellos momentos unicos! </small></p>
-          <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
-        </div>
-      </div>
-    </div>
-     <div class="card-group">
-      <div class="card">
+
+    <div class="card-group">
+      <div class="card p-3  shadow m-2">
         <img src="../imagenes/cajasandiamelon.png" class="card-img-top" alt=".">
         <div class="card-body">
           <h5 class="card-title">Sandía y Melón</h5>
-          <p class="card-text">Su aroma dulce y refrescante ideal para la epoca de verano o la que vos decidas, activa las energías positivas y hace que reduzca el ambiente negativo. Si eres una persona alegre, tierna, tranquila, romántica, imaginativa… Las fragancias con toques dulces son ideales para ti!</p>
-          <p class="card-text"><small class="text-muted">Aroma dulce y resfrecante, te ayuda a mantenerte positiva!   </small></p>
-          <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
+          <p class="card-text">Su aroma dulce y refrescante <span class="fw-bold">ideal para la epoca de verano</span> o la que vos decidas, activa las energías positivas y hace que reduzca el ambiente negativo. Si eres una persona <span class="fw-bold">alegre, tierna, tranquila, romántica, imaginativa…</span> Las fragancias con toques dulces son ideales para ti!</p>
+          <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo6">LEER MÁS</button></a>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="dialogo6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Aroma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="../imagenes/08.Carr.png">
+                <p class="card-text">Aroma dulce y resfrecante, te ayuda a mantenerte positiva!</p>
+              </div>              
+            </div>
+          </div>
+        </div> 
       </div>
-      <div class="card">
-        <img src="../imagenes/cajaChocolate.png" class="card-img-top" alt=".">
+
+      <div class="card p-3 shadow m-2">
+        <img src="../imagenes/cajaChocolate.png" class="card-img-top" alt=".">    
         <div class="card-body">
           <h5 class="card-title">Chocolate</h5>
-          <p class="card-text">El aroma a chocolate, cuyo significado suele estar relacionado al amor y la atracción. Existen casos de personas que son capaces de emanar esta particular fragancia de sus cuerpos. Logrando que otras puedan captar varios niveles de este aroma, este va desde el más sutil al más intenso.</p>       <p class="card-text"><small class="text-muted"></small></p>
-          <p class="card-text"><small class="text-muted">Aroma dulce, afrodisiaco, ideal para veladas especiales  </small></p>
-          <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
+          <p class="card-text">El aroma a chocolate, cuyo significado suele estar <span class="fw-bold"> relacionado al amor y la atracción.</span> Existen casos de personas que son capaces de emanar esta particular fragancia de sus cuerpos. Logrando que otras puedan captar varios niveles de este aroma, este va<span class="fw-bold"> desde el más sutil al más intenso</span>.</p> 
+          <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo4">LEER MÁS</button></a>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="dialogo4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Aroma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="../imagenes/chocolate06.png" height="80vh">
+                <p class="card-text">Aroma dulce, afrodisiaco, ideal para veladas especiales.</p>
+              </div>              
+            </div>
+          </div>
+        </div> 
       </div>
-      <div class="card">
+
+      <div class="card p-3 shadow m-2">
         <img src="../imagenes/cajacafe.png" class="card-img-top" alt=".">
         <div class="card-body">
           <h5 class="card-title">Café</h5>
-          <p class="card-text">El aroma del café, es un estimulante en cada despertar, es ese algo que nos inspira a comenzar un buen día, es como ese aroma a gardenias que nos hace recordar momentos inolvidables al momento de volver a sentir dicho aroma, o la fragancia de aquel perfume que sentimos al pasar por nuestros sentidos y que nos hace.</p>
-          <p class="card-text"><small class="text-muted">Aroma unico, te estimula el despertar..</small></p>
-          <a><button type="button" class="btn btnvermas">LEER MÁS</button></a>
+          <p class="card-text">El aroma del café, es un <span class="fw-bold">estimulante en cada despertar,</span> es ese algo que nos inspira a comenzar un buen día, es como ese aroma a gardenias que <span class="fw-bold">nos hace recordar momentos inolvidables al momento de volver a sentir dicho aroma,</span> o la fragancia de aquel perfume que sentimos al pasar por nuestros sentidos y que nos hace.</p>
+          <a><button type="button" class="btn btnvermas"  data-bs-toggle="modal" data-bs-target="#dialogo5">LEER MÁS</button></a>
         </div>
-      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="dialogo5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Aroma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="../imagenes/cafeflyer3.png">
+                <p class="card-text">Aroma unico, te estimula el despertar..</p>
+              </div>              
+            </div>
+          </div>
+        </div> 
     </div>
+  </div>
 <!--enlace a fuentes de iconos--> 
 <script src="https://kit.fontawesome.com/fb57d4fcfd.js" crossorigin="anonymous"></script>
 <!-- inicio de footer --> 
-<footer >
+<footer>
+  <div class="redes">
     <ul>
       <li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
       <li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
-       <li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
       <li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a></li>
     </ul>
-    <div class="copyright">
-      <img src="../imagenes/logo.png" alt="logo de la empresa" width="50 px" title="Logo de Soy Llama de Luna">
-      <p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa propiedad de Soy Llama de Luna</p>
-    </div>
+  </div>
+  <ul>
+      <li><p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa</p></li>
+  </ul>   
 </footer>
 <!--links bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

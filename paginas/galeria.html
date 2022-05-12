@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
     <!-- segundo links de hojas estilos css-->
-  <link rel="stylesheet" href="../estilo/style.css">
+  <link rel="stylesheet" href="../estilos/style-sass.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <!-- logo y todo lo que vemos en el navegador--> 
@@ -60,177 +60,167 @@
     <h2 class="py-4"></h2>
   <section>
       <div class="container-fluid">
-        <h2 class="galeriatitulo py-4">GALERIA DE IMAGENES DE TALLER Y VELAS</h2> 
+        <h2 class="galeriatitulo text-center py-4">GALERIA DE IMAGENES DE TALLER Y VELAS</h2> 
      </div>
   </section>
   <section>
-    <div class="container-fluid">
-      <div class="grid-container"> 
-         <div class="child-page-listing">            
-           <div class="grid-container">           
-                <div class="galeria-image">
-                    <article  class="galeria-listing">
-                        <a class="galeria-title" href="#"> Materiales de taller</a>
-                        <div class="galeria-image">
-                          <a href="#"><img width="400" height="200" src="../imagenes/taller1.jpg" alt="Materiales de taller">    </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-         </div> 
-               
-    <div class="container-fluid">
-      <div class="child-page-listing">
-        <div class="grid-container">                    
-            <div class="galeria-image">
-                 <article  class="galeria-listing">
-                    <a class="galeria-title" href="#"> Tips y aromas</a>
-                    <div class="galeria-image">
-                        <a href="#">
-                          <img width="400" height="200" src="../imagenes/velas1.jpg" alt="velas para Tarot">
-                        </a>
-                    </div>
-                </article>
-              </div>
-        </div>       
-      </div>
-    </div>
-     </section>
-     <section>
-      <div class="container-fluid">
-        <div class="grid-container"> 
-          <div class="child-page-listing">            
-            <div class="grid-container">           
-               <div class="galeria-image">
-                    <article  class="galeria-listing">
-                         <a class="galeria-title" href="#"> ¿Qué uso le darias?</a>
-                         <div class="galeria-image">
-                           <a href="#"><img width="400" height="200" src="../imagenes/velastarot2.jpg" alt="Tarot"></a>
-                         </div>
-                    </article>
-              </div>
-            </div> 
-          </div>  
-        </div> 
-      </div>     
-     <div class="container-fluid">
-       <div class="child-page-listing">
-         <div class="grid-container">                    
-             <div class="galeria-image">
-                 <article  class="galeria-listing">
-                     <a class="galeria-title" href="#"> Tips y aromas</a>
-                     <div class="galeria-image">
-                         <a href="#">
-                           <img width="400" height="200" src="../imagenes/velas1.jpg" alt="velas para Tarot">
-                         </a>
-                     </div>
-                 </article>
-             </div>
-         </div>       
-       </div>     
-     </div>
+    <div class="container">
+      <div class="row">
 
-   </section>
-   <section>
-    <div class="container-fluid">
-      <div class="grid-container"> 
-        <div class="child-page-listing">
-          <div class="grid-container">                    
-            <div class="galeria-image">
-                <article  class="galeria-listing">
-                   <a class="galeria-title" href="#"> ¿Qué uso le darias?</a>
-                    <div class="galeria-image">
-                      <a href="#">
-                        <img width="400" height="200" src="../imagenes/velaencuentrofamiliar.jpg" alt="Tarot">
-                      </a>
-                    </div>
-              </article>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col p-3"><img src="../imagenes/10.Carr.png" class="d-block w-100" alt="..."></div>
+
+
+            <div class="col p-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../imagenes/08.Carr.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../imagenes/03.Carr.png" class="d-block w-100" alt="...">
+                </div>
+                
+              </div>
             </div>
-         </div>       
-       </div> 
-     </div> 
-    <div class="container-fluid">
-      <div class="grid-container"> 
-        <div class="child-page-listing">            
-         <div class="grid-container">           
-           <div class="galeria-image">
-               <article  class="galeria-listing">
-                   <a class="galeria-title" href="#"> Materiales de taller</a>
-                   <div class="galeria-image">
-                     <a href="#"><img width="400" height="200" src="../imagenes/taller1.jpg" alt="Materiales de taller">    </a>
-                   </div>
-               </article>
-           </div>
-         </div> 
-      </div>   
-    <div class="container-fluid">
-      <div class="child-page-listing">
-        <div class="grid-container">                    
-           <div class="galeria-image">
-              <article  class="galeria-listing">
-                  <a class="galeria-title" href="#"> Tips y aromas</a>
-                  <div class="galeria-image">
-                     <a href="#">
-                       <img width="400" height="200" src="../imagenes/velas1.jpg" alt="velas para Tarot">
-                     </a>
-                  </div>
-              </article>
-            </div>
-          </div>       
-        </div> 
-      </div>
-   </section>
-   <section>
-   <div class="container-fluid">
-     <div class="child-page-listing">
-        <div class="grid-container">                    
-          <div class="galeria-image">
-              <article  class="galeria-listing">
-                  <a class="galeria-title" href="#"> Corta pabilos</a>
-                 <div class="galeria-image">
-                    <a href="#">
-                      <img width="400" height="200" src="../imagenes/cortapabilo1.jpg" alt="Corta pabilo">
-                    </a>
-                 </div> 
-              </article>
-           </div>
-        </div>       
-      </div> 
-    </div> 
-    <div class="child-page-listing">
-      <div class="grid-container">                    
-          <div class="galeria-image">
-              <article class="galeria-listing">
-                  <a class="galeria-title" href="#"> Nueva Linea</a>
-                  <div class="galeria-image">
-                      <a href="#">
-                        <img width="400" height="200" src="../imagenes/velas2.jpg" alt="Nueva linea">
-                      </a>
-                  </div>
-              </article>
           </div>
-      </div>       
-    </div> 
- </div>
-</div><!-- final del grid galeria de fotos -->
+
+
+            <div class="col p-3"><img src="../imagenes/09.Carr.png" class="d-block w-100" alt="..."></div>
+            
+            
+            <div class="col p-3">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="../imagenes/08.Carr.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="../imagenes/03.Carr.png" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+         
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row"> 
+            
+  
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+                <div class="col p-3"><img src="../imagenes/05.Carr.png" class="d-block w-100" alt="..."></div>
+  
+  
+                <div class="col p-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                      <img src="../imagenes/04.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="../imagenes/01.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../imagenes/07.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../imagenes/16.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+  
+  
+                <div class="col p-3"><img src="../imagenes/06.Carr.png" class="d-block w-100" alt="..."></div>
+             
+              </div>
+            </div>
+  
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col p-3"><img src="../imagenes/11.Carr.png" class="d-block w-100" alt="..."></div>
+  
+  
+                <div class="col p-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <img src="../imagenes/14.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../imagenes/15.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../imagenes/02.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+  
+                <div class="col p-3"><img src="../imagenes/12.Carr.png" class="d-block w-100" alt="..."></div>
+                <div class="col p-3"><img src="../imagenes/02.Carr.png" class="d-block w-100" alt="..."></div>
+             
+              </div>
+            </div>
+  
+  
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+                <div class="col p-3"><img src="../imagenes/20.Carr.png" class="d-block w-100" alt="..."></div>
+  
+  
+                <div class="col p-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                      <img src="../imagenes/18.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="../imagenes/19.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="../imagenes/17.Carr.png" class="d-block w-100" alt="...">
+                    </div>
+                    
+                   
+                  </div>
+                </div>
+              </div>
+  
+  
+                <div class="col p-3"><img src="../imagenes/21.Carr.png" class="d-block w-100" alt="..."></div>
+             
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
 </section>
-<div class="row">
-  <div class="col-12">
 </main>    
-<footer>
-     <div class="links">
-        <a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a>
-         <a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a>
-        <a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a>
-        <a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a>
-      </div>
-  <div class="copyright">
-        <img src="../imagenes/logo.png" alt="logo de la empresa" width="50 px" title="Logo de Soy Llama de Luna">
-        <p class="parrafo_violeta"> ® Este sitio desarrollado por Karen Vazquez de Novoa propiedad de Soy Llama de Luna</p>
-    </div>
+<footer><!-- inicio de footer --> 
+  <div class="redes">
+    <ul>
+      <li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
+      <li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
+      <li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
+      <li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a></li>
+    </ul>
+  </div>
+  <ul>
+      <li><p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa</p></li>
+  </ul>   
 </footer>
-</div>
-</div>
+
+
 <!--links bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

@@ -1,44 +1,8 @@
-
-
-
-//  body {
-//    background-color: #1a1a1a;
-//    color: #fefefe;
-//    font-family: 'Ubuntu';
-//    text-transform: uppercase;
-//    letter-spacing: 0.2em;
-//    font-size: 1.3em;
-//    line-height: 2;
-//    font-weight: 300;
-//    text-rendering: optimizeLegibility;
-//    text-align: center;
-//  }
- 
-//  .containernombre{
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-//    width: 100%;
-//    transform: translate(-50%, -50%);
-//    -webkit-transform: translate(-50%, -50%);
-//    -moz-transform: translate(-50%, -50%);
-//    -ms-transform: translate(-50%, -50%);
-//    -o-transform: translate(-50%, -50%);
-// }
- 
-//  .txtnav{
-//    display: block;
-//  }
- 
-//  a { 
-//    text-decoration: none;
-//    position: absolute;
-//    bottom: 10px;
-//    right: 10px;
-//    text-align: right;
-//    color: #eee;
-//    font-size: 15px;
-//    line-height: 15px;
-//  }
- 
-//  @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+/*animacion header productos*/
+.transition-soft-slow {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}

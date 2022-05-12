@@ -1,51 +1,36 @@
 footer{
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     padding: auto;
-    width: 100vw;
-    margin-top: 100px;
-    background-color: rgba(105, 201, 214, 0.719);
+    background-color: #B88BAD;
     background-size: cover;
     color: rgba(3, 0, 8, 0.63);
-    flex-wrap: wrap;
-    justify-content: center; 
-             
+    justify-content: center;   
             ul{
-                     display: flex;   
-                     flex-direction: row;  
-                     column-gap: 30px;
-                     align-content: center;
-                     align-items: center;
-                     justify-content: space-between;	 
-                    li {
-                        list-style-type: none;
-                        a {
-                           text-decoration: none;
-                            img {                           
-                                 column-gap: 20px;
-                                 margin-top: 20px;
-                                 width: 40px;
-                              }	
-                        }
+                 display: flex;   
+                 flex-direction: row;  
+                 column-gap: 30px;
+                 align-content: center;
+                 align-items: center;
+                 justify-content: space-between;	 
+                li {
+                     list-style-type: none;
+                    a {
+                      text-decoration: none;
+                        img {                           
+                           column-gap: 20px;
+                           margin-top: 20px;
+                           width: 40px;
+                        }	
                     }
                 }
-
+            }
          .copyright{
             align-items: center;
-            display: inline;
-            padding: auto;
-            width: 100vw;
-            margin-top: 100px;
-            background-color: rgba(105, 201, 214, 0.719);
-            background-size: cover;
-            color: rgba(3, 0, 8, 0.63);
-            flex-wrap: wrap;
-            justify-content: center; 
-
+            display: inline; 
         }
-        
-     
-            }
+}
         
    
            

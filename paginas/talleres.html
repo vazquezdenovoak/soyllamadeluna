@@ -12,7 +12,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 	<!-- segundo links de hojas estilos css-->
-	<link rel="stylesheet" href="../estilo/style.css">
+	<link rel="stylesheet" href="../estilos/style-sass.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<title> Talleres - Soy Llama de Luna</title>
 	
@@ -58,50 +58,63 @@
 	  </nav>
 	</header>
 	<main>
-	<section class="header-nos"><!-- fila de información de mi sitio -->
-	        <h3> Nuestros talleres </h3>
-            <small> Taller de velas decoradas </small>
-			<p class="lead"> Este taller de velas decoradas <span> te enseñaremos todo lo necesario </span> para poder crear tus velas de soja aromáticas y ecológicas de forma profesional, decoradas con flores y cristales. ​Aprenderás como hacerlas, decorarlas y darles un buen acabado. Después del éxito de la primera edición en la que recreamos una taza de café volvemos pero esta vez con otra temática: <span>Flores y minerales</span>!
-			  Te enseñaremos a usar la cera de soja desde cero. Aprenderás todos los secretos de las velas de soja, como derretirla adecuadamente, como darle color y aroma, a controlar los tiempos de secado y lo más divertido… a decorarlas! Además hablaremos del poder de los cristales y de cómo éstos combinados con <strong>ciertos aromas</strong>, pueden <strong> influir </strong> en nuestro <strong>estado de ánimo</strong>, ayudándonos a relajarnos o a alegrarnos el día. 😊</p>
-			<img id="logo_nosotros" src="../imagenes/logo.png" alt="LOGO">
-        <div >
-            <h3><u>↓ Capacitaciones ↓</u></h3>
-			<small class="lead"> ¿Qué aprenderas?</small>
-		</div>
-		   <div>
-			 <ul class="container-fluid">
-			    <li> ♥ Principales tipos de cera: ¿Cómo y para qué usarlos? </li>
-				<li> ♥ Distintos elementos y partes que componen una vela.</li>
-				</ul>
+	<section class="px-5 mx-2"><!-- fila de información de mi sitio -->
+		<h1 class="text-black-50 pt-5 mt-5 text-center">NUESTROS TALLERES</h1>
+		<div class="row g-0 bg-gradient position-relative mt-3 shadow">
+			<div class="col-md-6 mb-md-0 p-md-4 ">
+			  <img src="../imagenes/taller1.jpg" class="w-100 p-3" alt="...">
 			</div>
-			<div>
-				<ul class="container-fluid">
-				   <li> Proceso para hacer una vela profesional:</li>
-				   <li> ♥ Control de los puntos de fusión de la cera.</li>
-				   <li> ♥ Técnicas y aditivos para aromatizar </li>
-				   <li> ♥ Tecnicas para potenciar el aroma de tus velas.</li>
-				   <li> ♥ Trucos para perfeccionar el acabado de las velas.</li>
-				   <li> ♥ Breve introducción al mundo de los cristales y sus significados.</li>
-				   <li> ♥ Trucos para perfeccionar el acabado de las velas.</li>
-			    </ul>
-		    </div>
-			<div>
-			  <video controls> 
-				<source class="videomp4" type= "video/mp4" src="../videos/tutorialvelas1.mp4">
-			    <source class="videomp4" type="video/opv" src="../videos/tutorialvelas1.mp4">
-				Tu navegador no es compatible con este video
-			  </video>
+			<div class="col-md-6 p-4 ps-md-0">
+			  <h3 class="mt-0">Taller de velas decoradas</h3>
+			  <p class="lead"> Este taller de velas decoradas <span class="fw-bold"> te enseñaremos todo lo necesario </span> para poder crear tus velas de soja aromáticas y ecológicas de forma profesional, decoradas con flores y cristales. ​Aprenderás como hacerlas, decorarlas y darles un buen acabado. Después del éxito de la primera edición en la que recreamos una taza de café volvemos pero esta vez con otra temática: <span class="fw-bold">Flores y minerales</span>!
+				Te enseñaremos a usar la cera de soja desde cero. Aprenderás todos los secretos de las velas de soja, como derretirla adecuadamente, como darle color y aroma, a controlar los tiempos de secado y lo más divertido… a decorarlas! Además hablaremos del poder de los cristales y de cómo éstos combinados con <span class="fw-bold">ciertos aromas, pueden  influir  en nuestro estado de ánimo, ayudándonos a relajarnos o a alegrarnos el día.</span> 😊</p>
+			  
 			</div>
-			<div>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KiCrU4I2C0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		    </div>
-	        <div>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/GF8J-ycsMr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		    </div>
+		  </div>
+		
+
+		  <div class="row g-0 bg-gradient position-relative shadow mt-3 px-3">
+			<div class="col-md-6 p-4 ps-md-0  px-3">
+				<h3 class="mt-0">Taller de velas decoradas</h3>
+				<p class="lead"> Este taller de velas decoradas <span class="fw-bold"> te enseñaremos todo lo necesario </span> para poder crear tus velas de soja aromáticas y ecológicas de forma profesional, decoradas con flores y cristales. ​Aprenderás como hacerlas, decorarlas y darles un buen acabado. Después del éxito de la primera edición en la que recreamos una taza de café volvemos pero esta vez con otra temática: <span class="fw-bold">Flores y minerales</span>!
+				  Te enseñaremos a usar la cera de soja desde cero. Aprenderás todos los secretos de las velas de soja, como derretirla adecuadamente, como darle color y aroma, a controlar los tiempos de secado y lo más divertido… a decorarlas! Además hablaremos del poder de los cristales y de cómo éstos combinados con <span class="fw-bold">ciertos aromas, pueden  influir  en nuestro estado de ánimo, ayudándonos a relajarnos o a alegrarnos el día.</span> 😊</p>
+				
+			</div>
+			<div class="col-md-6 mb-md-0 p-md-4">
+			  <img class="img-fluid p-3" src="../imagenes/taller4.jpg"  alt="imagen del taller">
+			</div>
+			
+		  </div>
+
+		  <div class="row g-0 bg-gradient position-relative shadow mt-3  px-3">
+			<div class="col-md-6 mb-md-0 p-md-4">
+				<video controls class="img-fluid p-3"> 
+					<source class="videomp4" type= "video/mp4" src="../videos/tutorialvelas1.mp4">
+					<source class="videomp4" type="video/opv" src="../videos/tutorialvelas1.mp4">
+					Tu navegador no es compatible con este video
+				</video>
+			</div>			
+			<div class="col-md-6 p-4 ps-md-0">
+				<h3 class="mt-0">Taller de velas decoradas</h3>
+				<p class="lead"><ul>
+					<li> Proceso para hacer una vela profesional:</li>
+					<li> ♥ Control de los puntos de fusión de la cera.</li>
+					<li> ♥ Técnicas y aditivos para aromatizar </li>
+					<li> ♥ Tecnicas para potenciar el aroma de tus velas.</li>
+					<li> ♥ Trucos para perfeccionar el acabado de las velas.</li>
+					<li> ♥ Breve introducción al mundo de los cristales y sus significados.</li>
+					<li> ♥ Trucos para perfeccionar el acabado de las velas.</li>
+				 </ul> 😊</p>
+			</div>	
+		  </div>
+		</section>
+
 			<div><!-- fila de información de mi sitio -->
               <h1 class="tituloproductos pt-5"> Cursos y Talleres</h1>  
             </div>
-			<form class="px-5">
+
+			<div class="container-fluid mb-5">
+			<form class="p-5" >
 				<div class="row mb-3 pt-5 ">
 				  <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
 				  <div class="col-sm-10">
@@ -154,20 +167,26 @@
 				</div>
 				<button type="submit" class="btn btn-primary">Contactame</button>
 			</form>
-			</section>
+		</div>
+			
 		</main>
-	<footer ><!-- inicio de footer --> 
-        <ul>
-			<li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
-			<li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
-		    <li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
-            <li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="spotify"></a></li>
-        </ul>
-		 <div class="copyright">
-            <img src="../imagenes/logo.png" alt="logo de la empresa" width="50 px" title="Logo de Soy Llama de Luna">
-            <p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa propiedad de Soy Llama de Luna</p>
-        </div>
-	</footer>
+		<footer><!-- inicio de footer --> 
+			<div class="redes">
+			  <ul>
+				<li><a href="https://www.instagram.com/soyllamadeluna/"><img src="../imagenes/instagram_ico.png" alt= "Instagram"></a></li>
+				<li><a href="https://soy-llama-de-luna.negocio.site/"> <img src="../imagenes/sitegoogle_ico.png" alt= "Google Site"></a></li>			
+				<li><a href="https://api.whatsapp.com/send?phone=541141915433&text=%C2%A1Hola%20Soy%20llama%20de%20luna!%20"><img src="../imagenes/whats_ico.png" alt="Whatsapp"></a></li>
+				<li><a href="https://open.spotify.com/user/spotify?si=178b8c3ab49046f2"> <img src="../imagenes/spotify.png" alt="Spotify"></a></li>
+			  </ul>
+			</div>
+			<ul>
+				<li><p class="parrafo_violeta"> ® Este sitio fue desarrollado por Karen Vazquez de Novoa</p></li>
+			</ul>   
+		  </footer>
+
+
+
+
 	<!--links bootstrap-->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
